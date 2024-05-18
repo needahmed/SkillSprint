@@ -1,7 +1,8 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { buttonVariants } from "@/components/ui/button";
+
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
 
         <Link
           className={`inline-flex items-center bg-creme hover:bg-brown-200 text-white font-bold py-1 px-4 rounded-lg mt-5`}
-          href="/quiz"
+          href="/startquiz"
         >
           Take Quiz <ArrowRight className="h-5 w-5" />
         </Link>
@@ -105,7 +106,7 @@ export default function Home() {
             <div className="flex flex-col text-creme space-y-2 border-l-4 border-zinc-300 py-2 pl-4 md:border-l-0 md:border-t-2 md:pb-0 md:pl-0 md:pt-4">
               <span className="text-sm font-medium text-creme">Step 2</span>
               <span className="text-xl font-semibold text-creme">
-                Static and AI powered roadmaps
+                Saitic and AI Recommended roadmaps
               </span>
               <span className="mt-2 text-white">
                 For Free version, you'll get access to variety of roadmaps for
@@ -133,69 +134,70 @@ export default function Home() {
           <div className="mt-16 flow-root sm:mt-24">
             <div className="-m-2 rounded-xl">
               <div className="flex flex-wrap justify-center max-w-4xl mx-auto gap-4 p-4">
-                {/* Web Button */}
-                <Link
-                  href="/roadmaps/webdevelopment"
-                  className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 whitespace-nowrap"
-                >
-                  Web Development
-                </Link>
-                {/* Mobile Button */}
-                <Link
-                  href="/roadmaps/mobiledevelopment"
-                  className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 whitespace-nowrap"
-                >
-                  Mobile App Development
-                </Link>
-                {/* Data Button */}
-                <Link
-                  href="/roadmaps/datascience"
-                  className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 whitespace-nowrap"
-                >
-                  Data Science
-                </Link>
-                {/* Cloud Button */}
-                <Link
-                  href="/roadmaps/cloudcomputing"
-                  className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 whitespace-nowrap"
-                >
-                  Cloud Computing
-                </Link>
+                {/* Frontend Button */}
+                <button className="rounded-lg bg-creme w-36 px-8 py-2 text-sm font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                  Frontend
+                </button>
+                {/* Backend Button */}
+                <button className="rounded-lg bg-creme w-36 px-8 py-2 text-sm font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                  Backend
+                </button>
+                {/* Frontend Button */}
+                <button className="rounded-lg bg-creme w-36 px-8 py-2 text-sm font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                  Frontend
+                </button>
+                {/* FullStack Button */}
+                <button className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                  Full Stack
+                </button>
+                {/* CloudButton */}
+                <button className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                  Cloud Engineer
+                </button>
                 {/* Devops Button */}
-                <Link
-                  href="/roadmaps/devops"
-                  className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 whitespace-nowrap"
-                >
+                <button className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
                   DevOps
-                </Link>
+                </button>
+                {/* Android Button */}
+                <button className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                  Android
+                </button>
+                {/* IOS Button */}
+                <button className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                  IOS
+                </button>
+                {/* Flutter Button */}
+                <button className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                  Flutter
+                </button>
                 {/* AI Button */}
-                <Link
-                  href="/roadmaps/ai"
-                  className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 whitespace-nowrap"
-                >
-                  Artificial Intelligence
-                </Link>
+                <button className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                  AI/Data science
+                </button>
                 {/* Blockchain Button */}
-                <Link
-                  href="/roadmaps/blockchain"
-                  className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 whitespace-nowrap"
-                >
+                <button className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
                   Blockchain
-                </Link>
+                </button>
                 {/* Databases Button */}
-                <Link
-                  href="/frontend"
-                  className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 whitespace-nowrap"
-                >
-                  Network and Systems Administration
-                </Link>
+                <button className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                  Databases
+                </button>
+                {/* QA Button */}
+                <button className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                  QA
+                </button>
+                {/* Software Button */}
+                <button className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                  Software Architect
+                </button>
                 {/* Cyber Button */}
-                <Link
-                  href="/roadmaps/cybersecurity"
-                  className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 whitespace-nowrap"
-                >
+                <button className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
                   Cyber Security
-                </Link>
+                </button>
+                {/* UI Button */}
+                <button className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                  UI/UX
+                </button>
               </div>
             </div>
           </div>
