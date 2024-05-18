@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
 
-
 const QuizPage = () => {
   interface PredictResponse {
     careerPath: string;
@@ -156,7 +155,7 @@ const QuizPage = () => {
 
   const handleSubmit = async () => {
     try {
-      const response = await fetch("http://127.0.0.1:5000/predict", {
+      const response = await fetch(`${process.env.API_BASE_URL}/predict`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
