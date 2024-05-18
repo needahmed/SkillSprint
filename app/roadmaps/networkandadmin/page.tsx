@@ -16,14 +16,19 @@ const Circle = forwardRef<
       className={cn(
         "relative z-10 flex items-center justify-center rounded-full border-2 bg-white p-3 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)] text-center transition duration-300 cursor-pointer hover:bg-creme hover:text-white hover:shadow-lg",
         "h-16 w-40 md:h-20 md:w-48 lg:h-24 lg:w-56 xl:h-28 xl:w-64",
-        className,
+        className
       )}
       onClick={onClick}
     >
-      <span className="text-xs md:text-sm lg:text-base xl:text-lg">{children}</span>
+      <span className="text-xs md:text-sm lg:text-base xl:text-lg">
+        {children}
+      </span>
     </div>
   );
 });
+
+// Add displayName to the Circle component
+Circle.displayName = "Circle";
 
 export function NetworkAdminRoadmap() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -61,7 +66,8 @@ export function NetworkAdminRoadmap() {
   const documentationRef = useRef<HTMLDivElement>(null);
 
   const references = {
-    "Networking Basics": "https://www.cisco.com/c/en/us/solutions/small-business/resource-center/networking/networking-basics.html",
+    "Networking Basics":
+      "https://www.cisco.com/c/en/us/solutions/small-business/resource-center/networking/networking-basics.html",
     Protocols: "https://en.wikipedia.org/wiki/Networking_protocol",
     IP: "https://en.wikipedia.org/wiki/Internet_Protocol",
     "TCP/UDP": "https://en.wikipedia.org/wiki/Transport_layer",
@@ -76,7 +82,8 @@ export function NetworkAdminRoadmap() {
     "Windows Server": "https://en.wikipedia.org/wiki/Windows_Server",
     Virtualization: "https://en.wikipedia.org/wiki/Virtualization",
     VMware: "https://www.vmware.com/",
-    "Hyper-V": "https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/hyper-v-technology-overview",
+    "Hyper-V":
+      "https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/hyper-v-technology-overview",
     "Cloud Computing": "https://en.wikipedia.org/wiki/Cloud_computing",
     AWS: "https://aws.amazon.com/",
     Azure: "https://azure.microsoft.com/",
@@ -122,150 +129,389 @@ export function NetworkAdminRoadmap() {
         ref={containerRef}
       >
         <div className="flex flex-col gap-8 items-center">
-          <Circle ref={basicsRef} onClick={() => handleClick(references["Networking Basics"])}>
+          <Circle
+            ref={basicsRef}
+            onClick={() => handleClick(references["Networking Basics"])}
+          >
             Networking Basics
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle ref={protocolsRef} onClick={() => handleClick(references.Protocols)}>
+            <Circle
+              ref={protocolsRef}
+              onClick={() => handleClick(references.Protocols)}
+            >
               Protocols
             </Circle>
             <Circle ref={ipRef} onClick={() => handleClick(references.IP)}>
               IP
             </Circle>
-            <Circle ref={tcpUdpRef} onClick={() => handleClick(references["TCP/UDP"])}>
+            <Circle
+              ref={tcpUdpRef}
+              onClick={() => handleClick(references["TCP/UDP"])}
+            >
               TCP/UDP
             </Circle>
             <Circle ref={dnsRef} onClick={() => handleClick(references.DNS)}>
               DNS
             </Circle>
-            <Circle ref={subnettingRef} onClick={() => handleClick(references.Subnetting)}>
+            <Circle
+              ref={subnettingRef}
+              onClick={() => handleClick(references.Subnetting)}
+            >
               Subnetting
             </Circle>
           </div>
-          <Circle ref={networkingRef} onClick={() => handleClick(references["Networking Basics"])}>
+          <Circle
+            ref={networkingRef}
+            onClick={() => handleClick(references["Networking Basics"])}
+          >
             Networking
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle ref={routersRef} onClick={() => handleClick(references.Routers)}>
+            <Circle
+              ref={routersRef}
+              onClick={() => handleClick(references.Routers)}
+            >
               Routers
             </Circle>
-            <Circle ref={switchesRef} onClick={() => handleClick(references.Switches)}>
+            <Circle
+              ref={switchesRef}
+              onClick={() => handleClick(references.Switches)}
+            >
               Switches
             </Circle>
-            <Circle ref={firewallsRef} onClick={() => handleClick(references.Firewalls)}>
+            <Circle
+              ref={firewallsRef}
+              onClick={() => handleClick(references.Firewalls)}
+            >
               Firewalls
             </Circle>
-            <Circle ref={wirelessRef} onClick={() => handleClick(references.Wireless)}>
+            <Circle
+              ref={wirelessRef}
+              onClick={() => handleClick(references.Wireless)}
+            >
               Wireless
             </Circle>
           </div>
-          <Circle ref={systemsRef} onClick={() => handleClick(references["Operating Systems"])}>
+          <Circle
+            ref={systemsRef}
+            onClick={() => handleClick(references["Operating Systems"])}
+          >
             Systems
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle ref={linuxRef} onClick={() => handleClick(references.Linux)}>
+            <Circle
+              ref={linuxRef}
+              onClick={() => handleClick(references.Linux)}
+            >
               Linux
             </Circle>
-            <Circle ref={windowsServerRef} onClick={() => handleClick(references["Windows Server"])}>
+            <Circle
+              ref={windowsServerRef}
+              onClick={() => handleClick(references["Windows Server"])}
+            >
               Windows Server
             </Circle>
           </div>
-          <Circle ref={virtualizationRef} onClick={() => handleClick(references.Virtualization)}>
+          <Circle
+            ref={virtualizationRef}
+            onClick={() => handleClick(references.Virtualization)}
+          >
             Virtualization
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle ref={vmwareRef} onClick={() => handleClick(references.VMware)}>
+            <Circle
+              ref={vmwareRef}
+              onClick={() => handleClick(references.VMware)}
+            >
               VMware
             </Circle>
-            <Circle ref={hyperVRef} onClick={() => handleClick(references["Hyper-V"])}>
+            <Circle
+              ref={hyperVRef}
+              onClick={() => handleClick(references["Hyper-V"])}
+            >
               Hyper-V
             </Circle>
           </div>
-          <Circle ref={cloudComputingRef} onClick={() => handleClick(references["Cloud Computing"])}>
+          <Circle
+            ref={cloudComputingRef}
+            onClick={() => handleClick(references["Cloud Computing"])}
+          >
             Cloud Computing
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
             <Circle ref={awsRef} onClick={() => handleClick(references.AWS)}>
               AWS
             </Circle>
-            <Circle ref={azureRef} onClick={() => handleClick(references.Azure)}>
+            <Circle
+              ref={azureRef}
+              onClick={() => handleClick(references.Azure)}
+            >
               Azure
             </Circle>
-            <Circle ref={googleCloudRef} onClick={() => handleClick(references["Google Cloud"])}>
+            <Circle
+              ref={googleCloudRef}
+              onClick={() => handleClick(references["Google Cloud"])}
+            >
               Google Cloud
             </Circle>
           </div>
-          <Circle ref={monitoringRef} onClick={() => handleClick(references.Monitoring)}>
+          <Circle
+            ref={monitoringRef}
+            onClick={() => handleClick(references.Monitoring)}
+          >
             Monitoring
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle ref={nagiosRef} onClick={() => handleClick(references.Nagios)}>
+            <Circle
+              ref={nagiosRef}
+              onClick={() => handleClick(references.Nagios)}
+            >
               Nagios
             </Circle>
-            <Circle ref={prometheusRef} onClick={() => handleClick(references.Prometheus)}>
+            <Circle
+              ref={prometheusRef}
+              onClick={() => handleClick(references.Prometheus)}
+            >
               Prometheus
             </Circle>
-            <Circle ref={zabbixRef} onClick={() => handleClick(references.Zabbix)}>
+            <Circle
+              ref={zabbixRef}
+              onClick={() => handleClick(references.Zabbix)}
+            >
               Zabbix
             </Circle>
           </div>
-          <Circle ref={securityRef} onClick={() => handleClick(references.Security)}>
+          <Circle
+            ref={securityRef}
+            onClick={() => handleClick(references.Security)}
+          >
             Security
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle ref={firewallsSecRef} onClick={() => handleClick(references.FirewallsSec)}>
+            <Circle
+              ref={firewallsSecRef}
+              onClick={() => handleClick(references.FirewallsSec)}
+            >
               Firewalls
             </Circle>
             <Circle ref={vpnRef} onClick={() => handleClick(references.VPN)}>
               VPN
             </Circle>
-            <Circle ref={idsIpsRef} onClick={() => handleClick(references["IDS/IPS"])}>
+            <Circle
+              ref={idsIpsRef}
+              onClick={() => handleClick(references["IDS/IPS"])}
+            >
               IDS/IPS
             </Circle>
           </div>
-          <Circle ref={backupsRef} onClick={() => handleClick(references.Backups)}>
+          <Circle
+            ref={backupsRef}
+            onClick={() => handleClick(references.Backups)}
+          >
             Backups
           </Circle>
-          <Circle ref={disasterRecoveryRef} onClick={() => handleClick(references["Disaster Recovery"])}>
+          <Circle
+            ref={disasterRecoveryRef}
+            onClick={() => handleClick(references["Disaster Recovery"])}
+          >
             Disaster Recovery
           </Circle>
-          <Circle ref={documentationRef} onClick={() => handleClick(references.Documentation)}>
+          <Circle
+            ref={documentationRef}
+            onClick={() => handleClick(references.Documentation)}
+          >
             Documentation
           </Circle>
         </div>
 
         {/* Beams connecting the nodes */}
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={basicsRef} toRef={protocolsRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={basicsRef} toRef={ipRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={basicsRef} toRef={tcpUdpRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={basicsRef} toRef={dnsRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={basicsRef} toRef={subnettingRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={basicsRef} toRef={networkingRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={networkingRef} toRef={routersRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={networkingRef} toRef={switchesRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={networkingRef} toRef={firewallsRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={networkingRef} toRef={wirelessRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={networkingRef} toRef={systemsRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={systemsRef} toRef={linuxRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={systemsRef} toRef={windowsServerRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={systemsRef} toRef={virtualizationRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={virtualizationRef} toRef={vmwareRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={virtualizationRef} toRef={hyperVRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={virtualizationRef} toRef={cloudComputingRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={cloudComputingRef} toRef={awsRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={cloudComputingRef} toRef={azureRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={cloudComputingRef} toRef={googleCloudRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={cloudComputingRef} toRef={monitoringRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={monitoringRef} toRef={nagiosRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={monitoringRef} toRef={prometheusRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={monitoringRef} toRef={zabbixRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={monitoringRef} toRef={securityRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={securityRef} toRef={firewallsSecRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={securityRef} toRef={vpnRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={securityRef} toRef={idsIpsRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={securityRef} toRef={backupsRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={backupsRef} toRef={disasterRecoveryRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={disasterRecoveryRef} toRef={documentationRef} />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={basicsRef}
+          toRef={protocolsRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={basicsRef}
+          toRef={ipRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={basicsRef}
+          toRef={tcpUdpRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={basicsRef}
+          toRef={dnsRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={basicsRef}
+          toRef={subnettingRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={basicsRef}
+          toRef={networkingRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={networkingRef}
+          toRef={routersRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={networkingRef}
+          toRef={switchesRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={networkingRef}
+          toRef={firewallsRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={networkingRef}
+          toRef={wirelessRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={networkingRef}
+          toRef={systemsRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={systemsRef}
+          toRef={linuxRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={systemsRef}
+          toRef={windowsServerRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={systemsRef}
+          toRef={virtualizationRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={virtualizationRef}
+          toRef={vmwareRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={virtualizationRef}
+          toRef={hyperVRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={virtualizationRef}
+          toRef={cloudComputingRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={cloudComputingRef}
+          toRef={awsRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={cloudComputingRef}
+          toRef={azureRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={cloudComputingRef}
+          toRef={googleCloudRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={cloudComputingRef}
+          toRef={monitoringRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={monitoringRef}
+          toRef={nagiosRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={monitoringRef}
+          toRef={prometheusRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={monitoringRef}
+          toRef={zabbixRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={monitoringRef}
+          toRef={securityRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={securityRef}
+          toRef={firewallsSecRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={securityRef}
+          toRef={vpnRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={securityRef}
+          toRef={idsIpsRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={securityRef}
+          toRef={backupsRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={backupsRef}
+          toRef={disasterRecoveryRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={disasterRecoveryRef}
+          toRef={documentationRef}
+        />
       </div>
     </MaxWidthWrapper>
   );

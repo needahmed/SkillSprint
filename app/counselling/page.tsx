@@ -67,8 +67,8 @@ const page = () => {
                 How can you book a session?
               </p>
               <p className="text-white">
-                Sessions can be booked directly through our website via the
-                'Book a Session' link above.
+                Sessions can be booked directly through our website via the Book
+                a Session link above.
               </p>
             </li>
             <li>

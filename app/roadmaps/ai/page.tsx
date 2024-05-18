@@ -26,6 +26,8 @@ const Circle = forwardRef<
     </div>
   );
 });
+// Add displayName to the Circle component
+Circle.displayName = "Circle";
 
 export function AIRoadmap() {
   const containerRef = useRef<HTMLDivElement>(null);

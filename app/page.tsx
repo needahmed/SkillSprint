@@ -108,9 +108,9 @@ export default function Home() {
                 Static and AI powered roadmaps
               </span>
               <span className="mt-2 text-white">
-                For Free version, you'll get access to variety of roadmaps for
-                computer science field. For premium users, you'll get access to
-                a quiz which will analyze your personality.
+                For Free version, you will get access to variety of roadmaps for
+                computer science field. For premium users, you will get access
+                to a quiz which will analyze your personality.
               </span>
             </div>
           </li>

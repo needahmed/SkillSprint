@@ -27,6 +27,9 @@ const Circle = forwardRef<
   );
 });
 
+// Add displayName to the Circle component
+Circle.displayName = "Circle";
+
 export function DataScienceRoadmap() {
   const containerRef = useRef<HTMLDivElement>(null);
   const mathRef = useRef<HTMLDivElement>(null);

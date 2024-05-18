@@ -16,14 +16,19 @@ const Circle = forwardRef<
       className={cn(
         "relative z-10 flex items-center justify-center rounded-full border-2 bg-white p-5 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)] text-center transition duration-300 cursor-pointer hover:bg-creme hover:text-white hover:shadow-lg",
         "h-20 w-48 md:h-24 md:w-60 lg:h-28 lg:w-64 xl:h-32 xl:w-72",
-        className,
+        className
       )}
       onClick={onClick}
     >
-      <span className="text-xs md:text-sm lg:text-base xl:text-lg">{children}</span>
+      <span className="text-xs md:text-sm lg:text-base xl:text-lg">
+        {children}
+      </span>
     </div>
   );
 });
+
+// Add displayName to the Circle component
+Circle.displayName = "Circle";
 
 export function CloudComputingRoadmap() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -67,17 +72,22 @@ export function CloudComputingRoadmap() {
   const modelDeploymentRef = useRef<HTMLDivElement>(null);
 
   const references = {
-    Fundamentals: "https://www.cloudflare.com/learning/cloud/what-is-the-cloud/",
-    "Cloud Concepts": "https://www.cloudflare.com/learning/cloud/what-is-cloud-computing/",
-    "Service Models (IaaS, PaaS, SaaS)": "https://www.redhat.com/en/topics/cloud-computing/cloud-iaas-paas-saas",
-    "Deployment Models (Public, Private, Hybrid)": "https://www.ibm.com/cloud/learn/public-cloud",
+    Fundamentals:
+      "https://www.cloudflare.com/learning/cloud/what-is-the-cloud/",
+    "Cloud Concepts":
+      "https://www.cloudflare.com/learning/cloud/what-is-cloud-computing/",
+    "Service Models (IaaS, PaaS, SaaS)":
+      "https://www.redhat.com/en/topics/cloud-computing/cloud-iaas-paas-saas",
+    "Deployment Models (Public, Private, Hybrid)":
+      "https://www.ibm.com/cloud/learn/public-cloud",
     "Cloud Providers": "https://aws.amazon.com/free/cloud-training/",
     AWS: "https://aws.amazon.com/",
     Azure: "https://azure.microsoft.com/",
     "Google Cloud": "https://cloud.google.com/",
     "Compute Services": "https://aws.amazon.com/products/compute/",
     "Virtual Machines": "https://aws.amazon.com/ec2/",
-    Containers: "https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/",
+    Containers:
+      "https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/",
     Serverless: "https://aws.amazon.com/serverless/",
     "Storage Services": "https://aws.amazon.com/products/storage/",
     "Object Storage": "https://aws.amazon.com/s3/",
@@ -85,13 +95,15 @@ export function CloudComputingRoadmap() {
     "File Storage": "https://aws.amazon.com/efs/",
     Networking: "https://aws.amazon.com/products/networking/",
     VPCs: "https://aws.amazon.com/vpc/",
-    Subnets: "https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html",
+    Subnets:
+      "https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html",
     "Load Balancing": "https://aws.amazon.com/elasticloadbalancing/",
     DNS: "https://aws.amazon.com/route53/",
     Security: "https://aws.amazon.com/security/",
     IAM: "https://aws.amazon.com/iam/",
     Encryption: "https://aws.amazon.com/kms/",
-    "Security Groups": "https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html",
+    "Security Groups":
+      "https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html",
     Compliance: "https://aws.amazon.com/compliance/",
     DevOps: "https://aws.amazon.com/devops/",
     "CI/CD Pipelines": "https://aws.amazon.com/devops/continuous-integration/",
@@ -135,178 +147,471 @@ export function CloudComputingRoadmap() {
         ref={containerRef}
       >
         <div className="flex flex-col gap-8 items-center">
-          <Circle ref={fundamentalsRef} onClick={() => handleClick(references.Fundamentals)}>
+          <Circle
+            ref={fundamentalsRef}
+            onClick={() => handleClick(references.Fundamentals)}
+          >
             Fundamentals
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle ref={cloudConceptsRef} onClick={() => handleClick(references["Cloud Concepts"])}>
+            <Circle
+              ref={cloudConceptsRef}
+              onClick={() => handleClick(references["Cloud Concepts"])}
+            >
               Cloud Concepts
             </Circle>
-            <Circle ref={serviceModelsRef} onClick={() => handleClick(references["Service Models (IaaS, PaaS, SaaS)"])}>
+            <Circle
+              ref={serviceModelsRef}
+              onClick={() =>
+                handleClick(references["Service Models (IaaS, PaaS, SaaS)"])
+              }
+            >
               Service Models (IaaS, PaaS, SaaS)
             </Circle>
-            <Circle ref={deploymentModelsRef} onClick={() => handleClick(references["Deployment Models (Public, Private, Hybrid)"])}>
+            <Circle
+              ref={deploymentModelsRef}
+              onClick={() =>
+                handleClick(
+                  references["Deployment Models (Public, Private, Hybrid)"]
+                )
+              }
+            >
               Deployment Models (Public, Private, Hybrid)
             </Circle>
           </div>
-          <Circle ref={providersRef} onClick={() => handleClick(references["Cloud Providers"])}>
+          <Circle
+            ref={providersRef}
+            onClick={() => handleClick(references["Cloud Providers"])}
+          >
             Cloud Providers
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
             <Circle ref={awsRef} onClick={() => handleClick(references.AWS)}>
               AWS
             </Circle>
-            <Circle ref={azureRef} onClick={() => handleClick(references.Azure)}>
+            <Circle
+              ref={azureRef}
+              onClick={() => handleClick(references.Azure)}
+            >
               Azure
             </Circle>
-            <Circle ref={googleCloudRef} onClick={() => handleClick(references["Google Cloud"])}>
+            <Circle
+              ref={googleCloudRef}
+              onClick={() => handleClick(references["Google Cloud"])}
+            >
               Google Cloud
             </Circle>
           </div>
-          <Circle ref={computeRef} onClick={() => handleClick(references["Compute Services"])}>
+          <Circle
+            ref={computeRef}
+            onClick={() => handleClick(references["Compute Services"])}
+          >
             Compute Services
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle ref={virtualMachinesRef} onClick={() => handleClick(references["Virtual Machines"])}>
+            <Circle
+              ref={virtualMachinesRef}
+              onClick={() => handleClick(references["Virtual Machines"])}
+            >
               Virtual Machines
             </Circle>
-            <Circle ref={containersRef} onClick={() => handleClick(references.Containers)}>
+            <Circle
+              ref={containersRef}
+              onClick={() => handleClick(references.Containers)}
+            >
               Containers
             </Circle>
-            <Circle ref={serverlessRef} onClick={() => handleClick(references.Serverless)}>
+            <Circle
+              ref={serverlessRef}
+              onClick={() => handleClick(references.Serverless)}
+            >
               Serverless
             </Circle>
           </div>
-          <Circle ref={storageRef} onClick={() => handleClick(references["Storage Services"])}>
+          <Circle
+            ref={storageRef}
+            onClick={() => handleClick(references["Storage Services"])}
+          >
             Storage Services
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle ref={objectStorageRef} onClick={() => handleClick(references["Object Storage"])}>
+            <Circle
+              ref={objectStorageRef}
+              onClick={() => handleClick(references["Object Storage"])}
+            >
               Object Storage
             </Circle>
-            <Circle ref={blockStorageRef} onClick={() => handleClick(references["Block Storage"])}>
+            <Circle
+              ref={blockStorageRef}
+              onClick={() => handleClick(references["Block Storage"])}
+            >
               Block Storage
             </Circle>
-            <Circle ref={fileStorageRef} onClick={() => handleClick(references["File Storage"])}>
+            <Circle
+              ref={fileStorageRef}
+              onClick={() => handleClick(references["File Storage"])}
+            >
               File Storage
             </Circle>
           </div>
-          <Circle ref={networkingRef} onClick={() => handleClick(references.Networking)}>
+          <Circle
+            ref={networkingRef}
+            onClick={() => handleClick(references.Networking)}
+          >
             Networking
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
             <Circle ref={vpcRef} onClick={() => handleClick(references.VPCs)}>
               VPCs
             </Circle>
-            <Circle ref={subnetsRef} onClick={() => handleClick(references.Subnets)}>
+            <Circle
+              ref={subnetsRef}
+              onClick={() => handleClick(references.Subnets)}
+            >
               Subnets
             </Circle>
-            <Circle ref={loadBalancingRef} onClick={() => handleClick(references["Load Balancing"])}>
+            <Circle
+              ref={loadBalancingRef}
+              onClick={() => handleClick(references["Load Balancing"])}
+            >
               Load Balancing
             </Circle>
             <Circle ref={dnsRef} onClick={() => handleClick(references.DNS)}>
               DNS
             </Circle>
           </div>
-          <Circle ref={securityRef} onClick={() => handleClick(references.Security)}>
+          <Circle
+            ref={securityRef}
+            onClick={() => handleClick(references.Security)}
+          >
             Security
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
             <Circle ref={iamRef} onClick={() => handleClick(references.IAM)}>
               IAM
             </Circle>
-            <Circle ref={encryptionRef} onClick={() => handleClick(references.Encryption)}>
+            <Circle
+              ref={encryptionRef}
+              onClick={() => handleClick(references.Encryption)}
+            >
               Encryption
             </Circle>
-            <Circle ref={securityGroupsRef} onClick={() => handleClick(references["Security Groups"])}>
+            <Circle
+              ref={securityGroupsRef}
+              onClick={() => handleClick(references["Security Groups"])}
+            >
               Security Groups
             </Circle>
-            <Circle ref={complianceRef} onClick={() => handleClick(references.Compliance)}>
+            <Circle
+              ref={complianceRef}
+              onClick={() => handleClick(references.Compliance)}
+            >
               Compliance
             </Circle>
           </div>
-          <Circle ref={devOpsRef} onClick={() => handleClick(references.DevOps)}>
+          <Circle
+            ref={devOpsRef}
+            onClick={() => handleClick(references.DevOps)}
+          >
             DevOps
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle ref={ciCdRef} onClick={() => handleClick(references["CI/CD Pipelines"])}>
+            <Circle
+              ref={ciCdRef}
+              onClick={() => handleClick(references["CI/CD Pipelines"])}
+            >
               CI/CD Pipelines
             </Circle>
-            <Circle ref={infraAsCodeRef} onClick={() => handleClick(references["Infrastructure as Code"])}>
+            <Circle
+              ref={infraAsCodeRef}
+              onClick={() => handleClick(references["Infrastructure as Code"])}
+            >
               Infrastructure as Code
             </Circle>
-            <Circle ref={monitoringRef} onClick={() => handleClick(references.Monitoring)}>
+            <Circle
+              ref={monitoringRef}
+              onClick={() => handleClick(references.Monitoring)}
+            >
               Monitoring
             </Circle>
           </div>
-          <Circle ref={dataServicesRef} onClick={() => handleClick(references["Data Services"])}>
+          <Circle
+            ref={dataServicesRef}
+            onClick={() => handleClick(references["Data Services"])}
+          >
             Data Services
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle ref={databasesRef} onClick={() => handleClick(references.Databases)}>
+            <Circle
+              ref={databasesRef}
+              onClick={() => handleClick(references.Databases)}
+            >
               Databases
             </Circle>
-            <Circle ref={dataWarehousingRef} onClick={() => handleClick(references["Data Warehousing"])}>
+            <Circle
+              ref={dataWarehousingRef}
+              onClick={() => handleClick(references["Data Warehousing"])}
+            >
               Data Warehousing
             </Circle>
-            <Circle ref={dataLakesRef} onClick={() => handleClick(references["Data Lakes"])}>
+            <Circle
+              ref={dataLakesRef}
+              onClick={() => handleClick(references["Data Lakes"])}
+            >
               Data Lakes
             </Circle>
           </div>
-          <Circle ref={aiMlRef} onClick={() => handleClick(references["AI & Machine Learning"])}>
+          <Circle
+            ref={aiMlRef}
+            onClick={() => handleClick(references["AI & Machine Learning"])}
+          >
             AI & Machine Learning
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle ref={aiServicesRef} onClick={() => handleClick(references["AI Services"])}>
+            <Circle
+              ref={aiServicesRef}
+              onClick={() => handleClick(references["AI Services"])}
+            >
               AI Services
             </Circle>
-            <Circle ref={dataPipelinesRef} onClick={() => handleClick(references["Data Pipelines"])}>
+            <Circle
+              ref={dataPipelinesRef}
+              onClick={() => handleClick(references["Data Pipelines"])}
+            >
               Data Pipelines
             </Circle>
-            <Circle ref={modelDeploymentRef} onClick={() => handleClick(references["Model Deployment"])}>
+            <Circle
+              ref={modelDeploymentRef}
+              onClick={() => handleClick(references["Model Deployment"])}
+            >
               Model Deployment
             </Circle>
           </div>
         </div>
 
         {/* Beams connecting the nodes */}
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={fundamentalsRef} toRef={cloudConceptsRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={fundamentalsRef} toRef={serviceModelsRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={fundamentalsRef} toRef={deploymentModelsRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={fundamentalsRef} toRef={providersRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={providersRef} toRef={awsRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={providersRef} toRef={azureRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={providersRef} toRef={googleCloudRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={providersRef} toRef={computeRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={computeRef} toRef={virtualMachinesRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={computeRef} toRef={containersRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={computeRef} toRef={serverlessRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={computeRef} toRef={storageRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={storageRef} toRef={objectStorageRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={storageRef} toRef={blockStorageRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={storageRef} toRef={fileStorageRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={computeRef} toRef={networkingRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={networkingRef} toRef={vpcRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={networkingRef} toRef={subnetsRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={networkingRef} toRef={loadBalancingRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={networkingRef} toRef={dnsRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={computeRef} toRef={securityRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={securityRef} toRef={iamRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={securityRef} toRef={encryptionRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={securityRef} toRef={securityGroupsRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={securityRef} toRef={complianceRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={computeRef} toRef={devOpsRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={devOpsRef} toRef={ciCdRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={devOpsRef} toRef={infraAsCodeRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={devOpsRef} toRef={monitoringRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={computeRef} toRef={dataServicesRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={dataServicesRef} toRef={databasesRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={dataServicesRef} toRef={dataWarehousingRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={dataServicesRef} toRef={dataLakesRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={computeRef} toRef={aiMlRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={aiMlRef} toRef={aiServicesRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={aiMlRef} toRef={dataPipelinesRef} />
-        <AnimatedBeam duration={10} containerRef={containerRef} fromRef={aiMlRef} toRef={modelDeploymentRef} />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={fundamentalsRef}
+          toRef={cloudConceptsRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={fundamentalsRef}
+          toRef={serviceModelsRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={fundamentalsRef}
+          toRef={deploymentModelsRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={fundamentalsRef}
+          toRef={providersRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={providersRef}
+          toRef={awsRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={providersRef}
+          toRef={azureRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={providersRef}
+          toRef={googleCloudRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={providersRef}
+          toRef={computeRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={computeRef}
+          toRef={virtualMachinesRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={computeRef}
+          toRef={containersRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={computeRef}
+          toRef={serverlessRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={computeRef}
+          toRef={storageRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={storageRef}
+          toRef={objectStorageRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={storageRef}
+          toRef={blockStorageRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={storageRef}
+          toRef={fileStorageRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={computeRef}
+          toRef={networkingRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={networkingRef}
+          toRef={vpcRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={networkingRef}
+          toRef={subnetsRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={networkingRef}
+          toRef={loadBalancingRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={networkingRef}
+          toRef={dnsRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={computeRef}
+          toRef={securityRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={securityRef}
+          toRef={iamRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={securityRef}
+          toRef={encryptionRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={securityRef}
+          toRef={securityGroupsRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={securityRef}
+          toRef={complianceRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={computeRef}
+          toRef={devOpsRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={devOpsRef}
+          toRef={ciCdRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={devOpsRef}
+          toRef={infraAsCodeRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={devOpsRef}
+          toRef={monitoringRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={computeRef}
+          toRef={dataServicesRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={dataServicesRef}
+          toRef={databasesRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={dataServicesRef}
+          toRef={dataWarehousingRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={dataServicesRef}
+          toRef={dataLakesRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={computeRef}
+          toRef={aiMlRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={aiMlRef}
+          toRef={aiServicesRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={aiMlRef}
+          toRef={dataPipelinesRef}
+        />
+        <AnimatedBeam
+          duration={10}
+          containerRef={containerRef}
+          fromRef={aiMlRef}
+          toRef={modelDeploymentRef}
+        />
       </div>
     </MaxWidthWrapper>
   );

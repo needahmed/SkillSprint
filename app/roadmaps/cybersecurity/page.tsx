@@ -27,6 +27,9 @@ const Circle = forwardRef<
   );
 });
 
+// Add displayName to the Circle component
+Circle.displayName = "Circle";
+
 export function CyberSecurityRoadmap() {
   const containerRef = useRef<HTMLDivElement>(null);
   const introRef = useRef<HTMLDivElement>(null);
