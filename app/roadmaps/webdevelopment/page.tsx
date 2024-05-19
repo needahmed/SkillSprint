@@ -30,7 +30,7 @@ const Circle = forwardRef<
 // Add displayName to the Circle component
 Circle.displayName = "Circle";
 
-export function WebDevRoadmap() {
+const WebDevRoadmap = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const htmlRef = useRef<HTMLDivElement>(null);
   const cssRef = useRef<HTMLDivElement>(null);
@@ -378,7 +378,7 @@ export function WebDevRoadmap() {
       </div>
     </MaxWidthWrapper>
   );
-}
+};
 WebDevRoadmap.displayName = "WebDevRoadmap";
 // Default export of the page component
 export default function Page() {

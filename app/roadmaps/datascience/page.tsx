@@ -30,7 +30,7 @@ const Circle = forwardRef<
 // Add displayName to the Circle component
 Circle.displayName = "Circle";
 
-export function DataScienceRoadmap() {
+const DataScienceRoadmap = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const mathRef = useRef<HTMLDivElement>(null);
   const linearAlgebraRef = useRef<HTMLDivElement>(null);
@@ -539,7 +539,7 @@ export function DataScienceRoadmap() {
       </div>
     </MaxWidthWrapper>
   );
-}
+};
 DataScienceRoadmap.displayName = "DataScienceRoadmap";
 
 // Default export of the page component

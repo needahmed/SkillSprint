@@ -30,7 +30,7 @@ const Circle = forwardRef<
 // Add displayName to the Circle component
 Circle.displayName = "Circle";
 
-export function CyberSecurityRoadmap() {
+const CyberSecurityRoadmap = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const introRef = useRef<HTMLDivElement>(null);
   const networkingRef = useRef<HTMLDivElement>(null);
@@ -383,7 +383,7 @@ export function CyberSecurityRoadmap() {
       </div>
     </MaxWidthWrapper>
   );
-}
+};
 
 CyberSecurityRoadmap.displayName = "CyberSecurityRoadmap";
 

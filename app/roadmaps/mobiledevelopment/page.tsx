@@ -29,7 +29,7 @@ const Circle = forwardRef<
 // Add displayName to the Circle component
 Circle.displayName = "Circle";
 
-export function FlutterRoadmap() {
+const FlutterRoadmap = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const dartRef = useRef<HTMLDivElement>(null);
   const dartPadRef = useRef<HTMLDivElement>(null);
@@ -1064,7 +1064,7 @@ export function FlutterRoadmap() {
       </div>
     </MaxWidthWrapper>
   );
-}
+};
 FlutterRoadmap.displayName = "FlutterRoadmap";
 
 // Default export of the page component

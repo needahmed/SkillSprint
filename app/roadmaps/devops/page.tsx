@@ -30,7 +30,7 @@ const Circle = forwardRef<
 // Add displayName to the Circle component
 Circle.displayName = "Circle";
 
-export function DevOpsRoadmap() {
+const DevOpsRoadmap = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const programmingLanguageRef = useRef<HTMLDivElement>(null);
   const pythonRef = useRef<HTMLDivElement>(null);
@@ -1201,7 +1201,7 @@ export function DevOpsRoadmap() {
       </div>
     </MaxWidthWrapper>
   );
-}
+};
 
 DevOpsRoadmap.displayName = "DevOpsRoadmap";
 

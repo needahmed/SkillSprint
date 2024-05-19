@@ -30,7 +30,7 @@ const Circle = forwardRef<
 // Add displayName to the Circle component
 Circle.displayName = "Circle";
 
-export function CloudComputingRoadmap() {
+const CloudComputingRoadmap = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const fundamentalsRef = useRef<HTMLDivElement>(null);
   const cloudConceptsRef = useRef<HTMLDivElement>(null);
@@ -615,7 +615,7 @@ export function CloudComputingRoadmap() {
       </div>
     </MaxWidthWrapper>
   );
-}
+};
 
 CloudComputingRoadmap.displayName = "CloudComputingRoadmap";
 

@@ -30,7 +30,7 @@ const Circle = forwardRef<
 // Add displayName to the Circle component
 Circle.displayName = "Circle";
 
-export function NetworkAdminRoadmap() {
+const NetworkAdminRoadmap = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const basicsRef = useRef<HTMLDivElement>(null);
   const networkingRef = useRef<HTMLDivElement>(null);
@@ -515,7 +515,7 @@ export function NetworkAdminRoadmap() {
       </div>
     </MaxWidthWrapper>
   );
-}
+};
 NetworkAdminRoadmap.displayName = "NetworkAdminRoadmap";
 
 // Default export of the page component
