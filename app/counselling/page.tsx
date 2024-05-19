@@ -1,12 +1,68 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import emailjs from "emailjs-com";
+import { Toaster, toast } from "sonner";
 
-const page = () => {
+const CounsellingPage = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e: any) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+
+    emailjs
+      .send(
+        "service_yey1i7u", // Replace with your Email.js service ID
+        "template_md9n5t4", // Replace with your Email.js template ID
+        formData,
+        "Zh9exrkgIynI_yqQX" // Replace with your Email.js user ID
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          toast.success("Message sent successfully!", {
+            style: {
+              backgroundColor: "#e4c7b7", // creme color
+              color: "#484444", // text color
+            },
+          });
+        },
+        (error) => {
+          console.error("FAILED...", error);
+          toast.error("Failed to send message. Please try again later.", {
+            style: {
+              backgroundColor: "#484444", // brown color
+              color: "#ffffff", // text color
+            },
+          });
+        }
+      );
+
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
+  };
+
   return (
     <>
+      <Toaster richColors position="top-center" />
+
       <MaxWidthWrapper className="text-creme mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center">
         <h1 className="max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl">
           1-on-1 Career Counseling
@@ -95,13 +151,16 @@ const page = () => {
         {/* Contact Form */}
         <div className="my-12">
           <h2 className="text-4xl font-bold text-creme">Contact Us</h2>
-          <form className="text-white mt-4">
+          <form className="text-white mt-4" onSubmit={handleSubmit}>
             <label htmlFor="name">Name:</label>
             <input
               type="text"
               id="name"
               name="name"
               className="w-full p-2 mt-2 text-black"
+              value={formData.name}
+              onChange={handleChange}
+              required
             />
             <label htmlFor="email">Email:</label>
             <input
@@ -109,12 +168,18 @@ const page = () => {
               id="email"
               name="email"
               className="w-full p-2 mt-2 text-black"
+              value={formData.email}
+              onChange={handleChange}
+              required
             />
             <label htmlFor="message">Message:</label>
             <textarea
               id="message"
               name="message"
               className="w-full p-2 mt-2 text-black"
+              value={formData.message}
+              onChange={handleChange}
+              required
             ></textarea>
             <button
               type="submit"
@@ -129,4 +194,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default CounsellingPage;
