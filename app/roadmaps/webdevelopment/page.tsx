@@ -379,7 +379,7 @@ export function WebDevRoadmap() {
     </MaxWidthWrapper>
   );
 }
-
+WebDevRoadmap.displayName = "WebDevRoadmap";
 // Default export of the page component
 export default function Page() {
   return (

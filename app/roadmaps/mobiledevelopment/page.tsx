@@ -1065,6 +1065,7 @@ export function FlutterRoadmap() {
     </MaxWidthWrapper>
   );
 }
+FlutterRoadmap.displayName = "FlutterRoadmap";
 
 // Default export of the page component
 export default function Page() {

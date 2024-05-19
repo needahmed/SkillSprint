@@ -516,6 +516,7 @@ export function NetworkAdminRoadmap() {
     </MaxWidthWrapper>
   );
 }
+NetworkAdminRoadmap.displayName = "NetworkAdminRoadmap";
 
 // Default export of the page component
 export default function Page() {

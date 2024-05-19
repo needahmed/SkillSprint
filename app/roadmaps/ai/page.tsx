@@ -582,6 +582,8 @@ export function AIRoadmap() {
   );
 }
 
+AIRoadmap.displayName = "AIRoadmap";
+
 // Default export of the page component
 export default function Page() {
   return (

@@ -540,6 +540,7 @@ export function DataScienceRoadmap() {
     </MaxWidthWrapper>
   );
 }
+DataScienceRoadmap.displayName = "DataScienceRoadmap";
 
 // Default export of the page component
 export default function Page() {

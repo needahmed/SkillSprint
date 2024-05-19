@@ -385,6 +385,8 @@ export function CyberSecurityRoadmap() {
   );
 }
 
+CyberSecurityRoadmap.displayName = "CyberSecurityRoadmap";
+
 // Default export of the page component
 export default function Page() {
   return (

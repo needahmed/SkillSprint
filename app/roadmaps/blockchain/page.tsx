@@ -1022,6 +1022,7 @@ export function BlockchainRoadmap() {
     </MaxWidthWrapper>
   );
 }
+BlockchainRoadmap.displayName = "BlockchainRoadmap";
 
 // Default export of the page component
 export default function Page() {
