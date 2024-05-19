@@ -29,7 +29,8 @@ const Circle = forwardRef<
 // Add displayName to the Circle component
 Circle.displayName = "Circle";
 
-export function AIRoadmap() {
+// Define the AIRoadmap component
+const AIRoadmap = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const mathRef = useRef<HTMLDivElement>(null);
   const linearAlgebraRef = useRef<HTMLDivElement>(null);
@@ -580,7 +581,7 @@ export function AIRoadmap() {
       </div>
     </MaxWidthWrapper>
   );
-}
+};
 
 AIRoadmap.displayName = "AIRoadmap";
 
