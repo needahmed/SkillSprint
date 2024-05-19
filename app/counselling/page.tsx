@@ -18,7 +18,7 @@ const page = () => {
         </p>
 
         <Link
-          href="/booking"
+          href="/schedule"
           className="inline-flex items-center bg-creme hover:bg-brown-200 text-white font-bold py-1 px-4 rounded-lg mt-5"
         >
           Book a Session <ArrowRight className="h-5 w-5 ml-2" />
