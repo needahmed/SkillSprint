@@ -29,7 +29,7 @@ const Circle = forwardRef<
 // Add displayName to the Circle component
 Circle.displayName = "Circle";
 
-export function BlockchainRoadmap() {
+const BlockchainRoadmap = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const basicBlockchainKnowledgeRef = useRef<HTMLDivElement>(null);
   const blockchainStructureRef = useRef<HTMLDivElement>(null);
@@ -1021,7 +1021,7 @@ export function BlockchainRoadmap() {
       </div>
     </MaxWidthWrapper>
   );
-}
+};
 BlockchainRoadmap.displayName = "BlockchainRoadmap";
 
 // Default export of the page component
