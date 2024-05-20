@@ -119,36 +119,36 @@ const DevOpsRoadmap = () => {
     Go: "https://golang.org",
     Ruby: "https://www.ruby-lang.org",
     Rust: "https://www.rust-lang.org",
-    "Operating Systems": "https://www.operatingsystems.com",
+    "Operating Systems": "https://en.wikipedia.org/wiki/Operating_system",
     Linux: "https://www.linux.org",
     Unix: "https://www.unix.org",
-    "Learn to live in Terminal": "https://www.terminalcommands.com",
-    "Process Monitoring": "https://www.processmonitoring.com",
-    "Performance Monitoring": "https://www.performancemonitoring.com",
-    "Networking Tools": "https://www.networkingtools.com",
-    "Text Manipulation": "https://www.textmanipulation.com",
-    "Version Control Systems": "https://www.versioncontrolsystems.com",
-    "VCS Hosting": "https://www.vcshosting.com",
+    "Learn to live in Terminal": "https://www.youtube.com/watch?v=uwAqEzhyjtw",
+    "Process Monitoring": "https://www.atlassian.com/devops/devops-tools/devops-monitoring",
+    "Performance Monitoring": "https://www.crowdstrike.com/cybersecurity-101/observability/devops-monitoring/",
+    "Networking Tools": "https://www.thousandeyes.com/learning/techtorials/network-devops",
+    "Text Manipulation": "https://www.oreilly.com/library/view/devops-in-python/9781484279960/html/470619_2_En_6_Chapter.xhtml",
+    "Version Control Systems": "https://www.atlassian.com/git/tutorials/what-is-version-control",
+    "VCS Hosting": "https://www.vcshosting.comhttps://www.perforce.com/blog/vcs/what-is-version-control",
     GitHub: "https://github.com",
     GitLab: "https://gitlab.com",
     Bitbucket: "https://bitbucket.org",
-    Containers: "https://www.containers.com",
+    Containers: "https://www.papertrail.com/solution/tips/what-are-containers-and-containerization-in-devops/",
     LXC: "https://linuxcontainers.org",
     Docker: "https://www.docker.com",
-    "Cloud Providers": "https://www.cloudproviders.com",
+    "Cloud Providers": "https://cloud.google.com/learn/what-is-a-cloud-service-provider",
     AWS: "https://aws.amazon.com",
     Azure: "https://azure.microsoft.com",
     "Google Cloud": "https://cloud.google.com",
     "Networking, Security and Protocols":
-      "https://www.networkingsecurityprotocols.com",
-    FTP: "https://www.ftp.com",
-    DNS: "https://www.dns.com",
-    HTTPS: "https://www.https.com",
-    SSH: "https://www.ssh.com",
-    Serverless: "https://www.serverless.com",
+      "https://www.catonetworks.com/network-security/network-security-protocols/",
+    FTP: "https://www.techtarget.com/searchnetworking/definition/File-Transfer-Protocol-FTP",
+    DNS: "https://www.cloudflare.com/learning/dns/what-is-dns/",
+    HTTPS: "https://www.cloudflare.com/learning/ssl/what-is-https/",
+    SSH: "https://www.cloudflare.com/learning/access-management/what-is-ssh/#:~:text=What%20is%20the%20Secure%20Shell,and%20encrypt%20connections%20between%20devices.",
+    Serverless: "https://aws.amazon.com/blogs/devops/tag/serverless/",
     Cloudflare: "https://www.cloudflare.com",
     "AWS Lambda": "https://aws.amazon.com/lambda",
-    "Infrastructure Provisioning": "https://www.infrastructureprovisioning.com",
+    "Infrastructure Provisioning": "https://www.tierpoint.com/blog/infrastructure-provisioning/#:~:text=Infrastructure%20provisioning%2C%20as%20it%20pertains,Storage",
     "AWS CDK": "https://aws.amazon.com/cdk",
     CloudFormation: "https://aws.amazon.com/cloudformation",
     Pulumi: "https://www.pulumi.com",
@@ -156,46 +156,46 @@ const DevOpsRoadmap = () => {
     Ansible: "https://www.ansible.com",
     Chef: "https://www.chef.io",
     Puppet: "https://puppet.com",
-    "Learn some CI/CD Tool": "https://www.cicdtools.com",
+    "Learn some CI/CD Tool": "https://katalon.com/resources-center/blog/ci-cd-tools",
     "GitLab CI":
       "https://about.gitlab.com/stages-devops-lifecycle/continuous-integration",
     Jenkins: "https://www.jenkins.io",
     "GitHub Actions": "https://github.com/features/actions",
     "Travis CI": "https://travis-ci.org",
-    "Secret Management": "https://www.secretmanagement.com",
-    "Sealed Secrets": "https://github.com/bitnami-labs/sealed-secrets",
-    "Cloud Specific Tools": "https://www.cloudspecifictools.com",
+    "Secret Management": "https://delinea.com/blog/devops-secrets-management-and-vaulting",
+    "Sealed Secrets": "https://www.civo.com/learn/sealed-secrets-in-git#:~:text=Sealed%20Secrets%20is%20an%20open,can%20decrypt%20these%20encrypted%20secrets.",
+    "Cloud Specific Tools": "https://www.cloudzero.com/blog/cloud-computing-tools/",
     "Infrastructure Monitoring": "https://www.infrastructuremonitoring.com",
     Zabbix: "https://www.zabbix.com",
     Prometheus: "https://prometheus.io",
     Grafana: "https://grafana.com",
     Datadog: "https://www.datadoghq.com",
-    "Application Monitoring": "https://www.applicationmonitoring.com",
+    "Application Monitoring": "https://www.mezmo.com/learn-log-management/the-role-of-infrastructure-monitoring-in-devops",
     Jaeger: "https://www.jaegertracing.io",
     "New Relic": "https://newrelic.com",
     "App Datadog": "https://www.datadoghq.com",
     "App Prometheus": "https://prometheus.io",
-    "Logs Management": "https://www.logsmanagement.com",
+    "Logs Management": "https://www.solarwinds.com/resources/it-glossary/log-management",
     "Elastic Stack": "https://www.elastic.co/elastic-stack",
     Loki: "https://grafana.com/oss/loki",
-    Papertail: "https://www.papertail.com",
-    "Container Orchestration": "https://www.containerorchestration.com",
+    Papertail: "https://www.papertrail.com/",
+    "Container Orchestration": "https://cloud.google.com/discover/what-is-container-orchestration#:~:text=Container%20orchestration%20allows%20you%20to%20manage%20security%20policies%20across%20platforms,surfaces%20and%20improving%20overall%20security.",
     "GKE/EKS/AKS": "https://cloud.google.com/kubernetes-engine",
     "Docker Swarm": "https://docs.docker.com/engine/swarm",
     Kubernetes: "https://kubernetes.io",
-    "Artifact Management": "https://www.artifactmanagement.com",
+    "Artifact Management": "https://medium.com/@mistazidane/artifact-management-ad7768c3ca00",
     Artifactory: "https://jfrog.com/artifactory",
     Nexus: "https://www.sonatype.com/nexus/repository-oss",
     CloudSmith: "https://cloudsmith.io",
-    GitOps: "https://www.gitops.com",
-    "Service Mesh": "https://www.servicemesh.com",
+    GitOps: "https://www.gitops.comhttps://codefresh.io/learn/gitops/#:~:text=GitOps%20is%20an%20operational%20framework,infrastructure%20and%20manages%20software%20deployment.",
+    "Service Mesh": "https://aws.amazon.com/what-is/service-mesh/#:~:text=service%20mesh%20requirements%3F-,What%20is%20a%20service%20mesh%3F,the%20performance%20of%20the%20services.",
     Istio: "https://istio.io",
     Consul: "https://www.consul.io",
-    "Cloud Design Patterns": "https://www.clouddesignpatterns.com",
-    Availability: "https://www.availability.com",
-    "Data Management": "https://www.datamanagement.com",
-    "Design and Implementation": "https://www.designimplementation.com",
-    "Management and Monitoring": "https://www.managementmonitoring.com",
+    "Cloud Design Patterns": "https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/introduction.html",
+    Availability: "https://devops.com/defining-availability-maintainability-and-reliability-in-sre/",
+    "Data Management": "https://www.pmi.org/disciplined-agile/process/data-management/devops-strategies",
+    "Design and Implementation": "https://learn.microsoft.com/en-us/training/courses/az-400t00",
+    "Management and Monitoring": "https://www.atlassian.com/devops/devops-tools/devops-monitoring",
   };
 
   const handleClick = (url: string) => {
@@ -203,8 +203,8 @@ const DevOpsRoadmap = () => {
   };
 
   return (
-    <MaxWidthWrapper className="text-creme mb-12 mt-12 sm:mt-20 flex flex-col items-center justify-center text-center">
-      <h1 className="max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl mb-10">
+    <MaxWidthWrapper className="text-lblack mb-12 mt-12 sm:mt-20 flex flex-col items-center justify-center text-center">
+      <h1 className="text-creme max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl mb-10">
         DevOps Roadmap
       </h1>
       <div className="relative isolate">
@@ -235,19 +235,19 @@ const DevOpsRoadmap = () => {
             Learn a Programming Language
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c "
               ref={pythonRef}
               onClick={() => handleClick(references.Python)}
             >
               Python
             </Circle>
-            <Circle ref={goRef} onClick={() => handleClick(references.Go)}>
+            <Circle className="circle-c " ref={goRef} onClick={() => handleClick(references.Go)}>
               Go
             </Circle>
-            <Circle ref={rubyRef} onClick={() => handleClick(references.Ruby)}>
+            <Circle className="circle-c " ref={rubyRef} onClick={() => handleClick(references.Ruby)}>
               Ruby
             </Circle>
-            <Circle ref={rustRef} onClick={() => handleClick(references.Rust)}>
+            <Circle className="circle-c " ref={rustRef} onClick={() => handleClick(references.Rust)}>
               Rust
             </Circle>
           </div>
@@ -258,13 +258,13 @@ const DevOpsRoadmap = () => {
             Operating Systems
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c "
               ref={linuxRef}
               onClick={() => handleClick(references.Linux)}
             >
               Linux
             </Circle>
-            <Circle ref={unixRef} onClick={() => handleClick(references.Unix)}>
+            <Circle className="circle-c " ref={unixRef} onClick={() => handleClick(references.Unix)}>
               Unix
             </Circle>
           </div>
@@ -275,57 +275,57 @@ const DevOpsRoadmap = () => {
             Learn to live in Terminal
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c "
               ref={processMonitoringRef}
               onClick={() => handleClick(references["Process Monitoring"])}
             >
               Process Monitoring
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={performanceMonitoringRef}
               onClick={() => handleClick(references["Performance Monitoring"])}
             >
               Performance Monitoring
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={networkingToolsRef}
               onClick={() => handleClick(references["Networking Tools"])}
             >
               Networking Tools
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={textManipulationRef}
               onClick={() => handleClick(references["Text Manipulation"])}
             >
               Text Manipulation
             </Circle>
           </div>
-          <Circle
+          <Circle 
             ref={vcsRef}
             onClick={() => handleClick(references["Version Control Systems"])}
           >
             Version Control Systems
           </Circle>
-          <Circle
+          <Circle 
             ref={vcsHostingRef}
             onClick={() => handleClick(references["VCS Hosting"])}
           >
             VCS Hosting
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c "
               ref={gitHubRef}
               onClick={() => handleClick(references.GitHub)}
             >
               GitHub
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={gitLabRef}
               onClick={() => handleClick(references.GitLab)}
             >
               GitLab
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={bitbucketRef}
               onClick={() => handleClick(references.Bitbucket)}
             >
@@ -339,10 +339,10 @@ const DevOpsRoadmap = () => {
             Containers
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle ref={lxcRef} onClick={() => handleClick(references.LXC)}>
+            <Circle className="circle-c " ref={lxcRef} onClick={() => handleClick(references.LXC)}>
               LXC
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={dockerRef}
               onClick={() => handleClick(references.Docker)}
             >
@@ -356,16 +356,16 @@ const DevOpsRoadmap = () => {
             Cloud Providers
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle ref={awsRef} onClick={() => handleClick(references.AWS)}>
+            <Circle className="circle-c " ref={awsRef} onClick={() => handleClick(references.AWS)}>
               AWS
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={azureRef}
               onClick={() => handleClick(references.Azure)}
             >
               Azure
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={googleCloudRef}
               onClick={() => handleClick(references["Google Cloud"])}
             >
@@ -381,36 +381,36 @@ const DevOpsRoadmap = () => {
             Networking, Security and Protocols
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle ref={ftpRef} onClick={() => handleClick(references.FTP)}>
+            <Circle className="circle-c " ref={ftpRef} onClick={() => handleClick(references.FTP)}>
               FTP/SFTP
             </Circle>
-            <Circle ref={dnsRef} onClick={() => handleClick(references.DNS)}>
+            <Circle className="circle-c " ref={dnsRef} onClick={() => handleClick(references.DNS)}>
               DNS
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={httpsRef}
               onClick={() => handleClick(references.HTTPS)}
             >
               HTTPS
             </Circle>
-            <Circle ref={sshRef} onClick={() => handleClick(references.SSH)}>
+            <Circle className="circle-c " ref={sshRef} onClick={() => handleClick(references.SSH)}>
               SSH
             </Circle>
           </div>
-          <Circle
+          <Circle 
             ref={serverlessRef}
             onClick={() => handleClick(references.Serverless)}
           >
             Serverless
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c "
               ref={cloudflareRef}
               onClick={() => handleClick(references.Cloudflare)}
             >
               Cloudflare
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={awsLambdaRef}
               onClick={() => handleClick(references["AWS Lambda"])}
             >
@@ -426,19 +426,19 @@ const DevOpsRoadmap = () => {
             Infrastructure Provisioning
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c "
               ref={awsCdkRef}
               onClick={() => handleClick(references["AWS CDK"])}
             >
               AWS CDK
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={cloudFormationRef}
               onClick={() => handleClick(references.CloudFormation)}
             >
               CloudFormation
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={pulumiRef}
               onClick={() => handleClick(references.Pulumi)}
             >
@@ -452,16 +452,16 @@ const DevOpsRoadmap = () => {
             Configuration Management
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c "
               ref={ansibleRef}
               onClick={() => handleClick(references.Ansible)}
             >
               Ansible
             </Circle>
-            <Circle ref={chefRef} onClick={() => handleClick(references.Chef)}>
+            <Circle className="circle-c " ref={chefRef} onClick={() => handleClick(references.Chef)}>
               Chef
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={puppetRef}
               onClick={() => handleClick(references.Puppet)}
             >
@@ -475,25 +475,25 @@ const DevOpsRoadmap = () => {
             Learn some CI/CD Tool
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c "
               ref={gitLabCIRef}
               onClick={() => handleClick(references["GitLab CI"])}
             >
               GitLab CI
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={jenkinsRef}
               onClick={() => handleClick(references.Jenkins)}
             >
               Jenkins
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={githubActionsRef}
               onClick={() => handleClick(references["GitHub Actions"])}
             >
               GitHub Actions
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={travisCIRef}
               onClick={() => handleClick(references["Travis CI"])}
             >
@@ -507,13 +507,13 @@ const DevOpsRoadmap = () => {
             Secret Management
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c "
               ref={sealedSecretsRef}
               onClick={() => handleClick(references["Sealed Secrets"])}
             >
               Sealed Secrets
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={cloudSpecificToolsRef}
               onClick={() => handleClick(references["Cloud Specific Tools"])}
             >
@@ -527,25 +527,25 @@ const DevOpsRoadmap = () => {
             Infrastructure Monitoring
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c "
               ref={zabbixRef}
               onClick={() => handleClick(references.Zabbix)}
             >
               Zabbix
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={prometheusRef}
               onClick={() => handleClick(references.Prometheus)}
             >
               Prometheus
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={grafanaRef}
               onClick={() => handleClick(references.Grafana)}
             >
               Grafana
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={datadogRef}
               onClick={() => handleClick(references.Datadog)}
             >
@@ -559,25 +559,25 @@ const DevOpsRoadmap = () => {
             Application Monitoring
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c "
               ref={jaegerRef}
               onClick={() => handleClick(references.Jaeger)}
             >
               Jaeger
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={newRelicRef}
               onClick={() => handleClick(references["New Relic"])}
             >
               New Relic
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={appDatadogRef}
               onClick={() => handleClick(references["App Datadog"])}
             >
               Datadog
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={appPrometheusRef}
               onClick={() => handleClick(references["App Prometheus"])}
             >
@@ -591,42 +591,42 @@ const DevOpsRoadmap = () => {
             Logs Management
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c "
               ref={elasticStackRef}
               onClick={() => handleClick(references["Elastic Stack"])}
             >
               Elastic Stack
             </Circle>
-            <Circle ref={lokiRef} onClick={() => handleClick(references.Loki)}>
+            <Circle className="circle-c " ref={lokiRef} onClick={() => handleClick(references.Loki)}>
               Loki
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={papertailRef}
               onClick={() => handleClick(references.Papertail)}
             >
               Papertail
             </Circle>
           </div>
-          <Circle
+          <Circle 
             ref={containerOrchestrationRef}
             onClick={() => handleClick(references["Container Orchestration"])}
           >
             Container Orchestration
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c "
               ref={gkeEksAksRef}
               onClick={() => handleClick(references["GKE/EKS/AKS"])}
             >
               GKE/EKS/AKS
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={dockerSwarmRef}
               onClick={() => handleClick(references["Docker Swarm"])}
             >
               Docker Swarm
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={kubernetesRef}
               onClick={() => handleClick(references.Kubernetes)}
             >
@@ -640,19 +640,19 @@ const DevOpsRoadmap = () => {
             Artifact Management
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c "
               ref={artifactoryRef}
               onClick={() => handleClick(references.Artifactory)}
             >
               Artifactory
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={nexusRef}
               onClick={() => handleClick(references.Nexus)}
             >
               Nexus
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={cloudSmithRef}
               onClick={() => handleClick(references.CloudSmith)}
             >
@@ -672,13 +672,13 @@ const DevOpsRoadmap = () => {
             Service Mesh
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c "
               ref={istioRef}
               onClick={() => handleClick(references.Istio)}
             >
               Istio
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={consulRef}
               onClick={() => handleClick(references.Consul)}
             >
@@ -692,19 +692,19 @@ const DevOpsRoadmap = () => {
             Cloud Design Patterns
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c "
               ref={availabilityRef}
               onClick={() => handleClick(references.Availability)}
             >
               Availability
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={dataManagementRef}
               onClick={() => handleClick(references["Data Management"])}
             >
               Data Management
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={designImplementationRef}
               onClick={() =>
                 handleClick(references["Design and Implementation"])
@@ -712,7 +712,7 @@ const DevOpsRoadmap = () => {
             >
               Design and Implementation
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={managementMonitoringRef}
               onClick={() =>
                 handleClick(references["Management and Monitoring"])

@@ -52,7 +52,7 @@ const WebDevRoadmap = () => {
   const s3Ref = useRef<HTMLDivElement>(null);
   const monitRef = useRef<HTMLDivElement>(null);
   const ciCdRef = useRef<HTMLDivElement>(null);
-  const monitoringRef = useRef<HTMLDivElement>(null);
+
   const ansibleRef = useRef<HTMLDivElement>(null);
   const terraformRef = useRef<HTMLDivElement>(null);
   const infrastructureRef = useRef<HTMLDivElement>(null);
@@ -65,7 +65,7 @@ const WebDevRoadmap = () => {
     TailwindCSS: "https://tailwindcss.com/docs",
     GitHub: "https://docs.github.com/en/get-started",
     Git: "https://git-scm.com/doc",
-    "Start Backend Development": "https://nodejs.org/en/docs/",
+    "Start Backend Development": "https://www.coursera.org/articles/back-end-developer",
     "Node.js": "https://nodejs.org/en/docs/",
     PostgreSQL: "https://www.postgresql.org/docs/",
     Redis: "https://redis.io/documentation",
@@ -77,8 +77,8 @@ const WebDevRoadmap = () => {
     VPC: "https://docs.aws.amazon.com/vpc/index.html",
     S3: "https://docs.aws.amazon.com/s3/index.html",
     Monit: "https://mmonit.com/monit/documentation/",
-    "CI/CD": "https://www.atlassian.com/continuous-delivery/ci-vs-cd",
-    Monitoring: "https://www.datadoghq.com/monitoring/",
+    "CI/CD": "https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment",
+
     Ansible: "https://docs.ansible.com/",
     Terraform: "https://www.terraform.io/docs",
     Infrastructure:
@@ -90,8 +90,8 @@ const WebDevRoadmap = () => {
   };
 
   return (
-    <MaxWidthWrapper className="text-creme mb-12 mt-12 sm:mt-20 flex flex-col items-center justify-center text-center">
-      <h1 className="max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl mb-10">
+    <MaxWidthWrapper className="text-lblack mb-12 mt-12 sm:mt-20 flex flex-col items-center justify-center text-center">
+      <h1 className="text-creme max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl mb-10">
         Web Development Roadmap
       </h1>
       <div className="relative isolate">
@@ -190,14 +190,14 @@ const WebDevRoadmap = () => {
             Basic AWS Services
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle ref={ec2Ref} onClick={() => handleClick(references.EC2)}>
+            <Circle className="circle-c " ref={ec2Ref} onClick={() => handleClick(references.EC2)}>
               EC2
             </Circle>
-            <Circle ref={vpcRef} onClick={() => handleClick(references.VPC)}>
+            <Circle  className="circle-c " ref={vpcRef} onClick={() => handleClick(references.VPC)}>
               VPC
             </Circle>
 
-            <Circle ref={s3Ref} onClick={() => handleClick(references.S3)}>
+            <Circle className="circle-c " ref={s3Ref} onClick={() => handleClick(references.S3)}>
               S3
             </Circle>
           </div>
@@ -210,12 +210,7 @@ const WebDevRoadmap = () => {
           >
             CI/CD
           </Circle>
-          <Circle
-            ref={monitoringRef}
-            onClick={() => handleClick(references.Monitoring)}
-          >
-            Monitoring
-          </Circle>
+         
           <Circle
             ref={ansibleRef}
             onClick={() => handleClick(references.Ansible)}
@@ -228,12 +223,7 @@ const WebDevRoadmap = () => {
           >
             Terraform
           </Circle>
-          <Circle
-            ref={infrastructureRef}
-            onClick={() => handleClick(references.Infrastructure)}
-          >
-            Infrastructure
-          </Circle>
+         
         </div>
 
         {/* Beams connecting the nodes */}
@@ -351,16 +341,11 @@ const WebDevRoadmap = () => {
           fromRef={monitRef}
           toRef={ciCdRef}
         />
+      
         <AnimatedBeam
           duration={10}
           containerRef={containerRef}
           fromRef={ciCdRef}
-          toRef={monitoringRef}
-        />
-        <AnimatedBeam
-          duration={10}
-          containerRef={containerRef}
-          fromRef={monitoringRef}
           toRef={ansibleRef}
         />
         <AnimatedBeam
@@ -369,12 +354,7 @@ const WebDevRoadmap = () => {
           fromRef={ansibleRef}
           toRef={terraformRef}
         />
-        <AnimatedBeam
-          duration={10}
-          containerRef={containerRef}
-          fromRef={terraformRef}
-          toRef={infrastructureRef}
-        />
+   
       </div>
     </MaxWidthWrapper>
   );

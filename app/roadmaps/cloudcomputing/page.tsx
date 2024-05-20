@@ -75,12 +75,12 @@ const CloudComputingRoadmap = () => {
     Fundamentals:
       "https://www.cloudflare.com/learning/cloud/what-is-the-cloud/",
     "Cloud Concepts":
-      "https://www.cloudflare.com/learning/cloud/what-is-cloud-computing/",
+      "https://www.lucidchart.com/blog/cloud-computing-basics",
     "Service Models (IaaS, PaaS, SaaS)":
-      "https://www.redhat.com/en/topics/cloud-computing/cloud-iaas-paas-saas",
+      "https://www.bigcommerce.com/articles/ecommerce/saas-vs-paas-vs-iaas/",
     "Deployment Models (Public, Private, Hybrid)":
       "https://www.ibm.com/cloud/learn/public-cloud",
-    "Cloud Providers": "https://aws.amazon.com/free/cloud-training/",
+    "Cloud Providers": "https://cloud.google.com/learn/what-is-a-cloud-service-provider",
     AWS: "https://aws.amazon.com/",
     Azure: "https://azure.microsoft.com/",
     "Google Cloud": "https://cloud.google.com/",
@@ -124,8 +124,8 @@ const CloudComputingRoadmap = () => {
   };
 
   return (
-    <MaxWidthWrapper className="text-creme mb-12 mt-12 sm:mt-20 flex flex-col items-center justify-center text-center">
-      <h1 className="max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl mb-10">
+    <MaxWidthWrapper className="text-lblack mb-12 mt-12 sm:mt-20 flex flex-col items-center justify-center text-center">
+      <h1 className="text-creme max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl mb-10">
         Cloud Computing Roadmap
       </h1>
       <div className="relative isolate">
@@ -154,13 +154,13 @@ const CloudComputingRoadmap = () => {
             Fundamentals
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c "
               ref={cloudConceptsRef}
               onClick={() => handleClick(references["Cloud Concepts"])}
             >
               Cloud Concepts
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={serviceModelsRef}
               onClick={() =>
                 handleClick(references["Service Models (IaaS, PaaS, SaaS)"])
@@ -168,7 +168,7 @@ const CloudComputingRoadmap = () => {
             >
               Service Models (IaaS, PaaS, SaaS)
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={deploymentModelsRef}
               onClick={() =>
                 handleClick(
@@ -186,16 +186,16 @@ const CloudComputingRoadmap = () => {
             Cloud Providers
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle ref={awsRef} onClick={() => handleClick(references.AWS)}>
+            <Circle className="circle-c " ref={awsRef} onClick={() => handleClick(references.AWS)}>
               AWS
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={azureRef}
               onClick={() => handleClick(references.Azure)}
             >
               Azure
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={googleCloudRef}
               onClick={() => handleClick(references["Google Cloud"])}
             >
@@ -209,19 +209,19 @@ const CloudComputingRoadmap = () => {
             Compute Services
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c "
               ref={virtualMachinesRef}
               onClick={() => handleClick(references["Virtual Machines"])}
             >
               Virtual Machines
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={containersRef}
               onClick={() => handleClick(references.Containers)}
             >
               Containers
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={serverlessRef}
               onClick={() => handleClick(references.Serverless)}
             >
@@ -235,19 +235,19 @@ const CloudComputingRoadmap = () => {
             Storage Services
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c "
               ref={objectStorageRef}
               onClick={() => handleClick(references["Object Storage"])}
             >
               Object Storage
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={blockStorageRef}
               onClick={() => handleClick(references["Block Storage"])}
             >
               Block Storage
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={fileStorageRef}
               onClick={() => handleClick(references["File Storage"])}
             >
@@ -261,22 +261,22 @@ const CloudComputingRoadmap = () => {
             Networking
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle ref={vpcRef} onClick={() => handleClick(references.VPCs)}>
+            <Circle className="circle-c " ref={vpcRef} onClick={() => handleClick(references.VPCs)}>
               VPCs
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={subnetsRef}
               onClick={() => handleClick(references.Subnets)}
             >
               Subnets
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={loadBalancingRef}
               onClick={() => handleClick(references["Load Balancing"])}
             >
               Load Balancing
             </Circle>
-            <Circle ref={dnsRef} onClick={() => handleClick(references.DNS)}>
+            <Circle className="circle-c " ref={dnsRef} onClick={() => handleClick(references.DNS)}>
               DNS
             </Circle>
           </div>
@@ -287,22 +287,22 @@ const CloudComputingRoadmap = () => {
             Security
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle ref={iamRef} onClick={() => handleClick(references.IAM)}>
+            <Circle className="circle-c " ref={iamRef} onClick={() => handleClick(references.IAM)}>
               IAM
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={encryptionRef}
               onClick={() => handleClick(references.Encryption)}
             >
               Encryption
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={securityGroupsRef}
               onClick={() => handleClick(references["Security Groups"])}
             >
               Security Groups
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={complianceRef}
               onClick={() => handleClick(references.Compliance)}
             >
@@ -316,19 +316,19 @@ const CloudComputingRoadmap = () => {
             DevOps
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c "
               ref={ciCdRef}
               onClick={() => handleClick(references["CI/CD Pipelines"])}
             >
               CI/CD Pipelines
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={infraAsCodeRef}
               onClick={() => handleClick(references["Infrastructure as Code"])}
             >
               Infrastructure as Code
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={monitoringRef}
               onClick={() => handleClick(references.Monitoring)}
             >
@@ -342,19 +342,19 @@ const CloudComputingRoadmap = () => {
             Data Services
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c "
               ref={databasesRef}
               onClick={() => handleClick(references.Databases)}
             >
               Databases
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={dataWarehousingRef}
               onClick={() => handleClick(references["Data Warehousing"])}
             >
               Data Warehousing
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={dataLakesRef}
               onClick={() => handleClick(references["Data Lakes"])}
             >
@@ -368,19 +368,19 @@ const CloudComputingRoadmap = () => {
             AI & Machine Learning
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c "
               ref={aiServicesRef}
               onClick={() => handleClick(references["AI Services"])}
             >
               AI Services
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={dataPipelinesRef}
               onClick={() => handleClick(references["Data Pipelines"])}
             >
               Data Pipelines
             </Circle>
-            <Circle
+            <Circle className="circle-c "
               ref={modelDeploymentRef}
               onClick={() => handleClick(references["Model Deployment"])}
             >

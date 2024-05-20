@@ -15,7 +15,7 @@ export default function Home() {
         </p>
 
         <Link
-          className={`inline-flex items-center bg-creme hover:bg-brown-200 text-white font-bold py-1 px-4 rounded-lg mt-5`}
+          className={`inline-flex items-center bg-creme hover:bg-brown-200 text-lblack font-bold py-1 px-4 rounded-lg mt-5  hover:bg-gray-600 hover:text-white `}
           href="/quiz"
         >
           Take Quiz <ArrowRight className="h-5 w-5" />
@@ -43,9 +43,8 @@ export default function Home() {
               <div className="mt-16 flow-root sm:mt-24">
                 <p className="text-lg text-creme p-4 sm:p-8 md:p-20 center ">
                   At Skillsprint, we have redefined the way you learn. Our
-                  platform combines the best of both worlds: static roadmaps
-                  meticulously designed by experts and dynamic personalized
-                  pathways created just for you. We believe in empowering
+                  platform combines the best of both worlds: Interactive roadmaps
+                   and personalized career paths recommendations just for you. We believe in empowering
                   individuals to unleash their full potential, guiding them on a
                   journey that aligns with their skills and interests.
                 </p>
@@ -65,6 +64,7 @@ export default function Home() {
               className="relative left-[calc(50%-13rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-36rem)] sm:w-[72.1875rem]"
             />
           </div>
+          
         </div>
       </div>
 
@@ -73,7 +73,7 @@ export default function Home() {
         <div className="mb-12 px-6 lg:px-8">
           <div className="mx-auto max-w-2xl sm:text-center">
             <h2 className="mt-2 font-bold text-4xl text-creme sm:text-5xl">
-              Start chatting in minutes
+              Start your career journy in minutes 
             </h2>
             <p className="mt-4 text-lg text-white">
               Empower your learning journey with Skillsprint.
@@ -105,7 +105,7 @@ export default function Home() {
             <div className="flex flex-col text-creme space-y-2 border-l-4 border-zinc-300 py-2 pl-4 md:border-l-0 md:border-t-2 md:pb-0 md:pl-0 md:pt-4">
               <span className="text-sm font-medium text-creme">Step 2</span>
               <span className="text-xl font-semibold text-creme">
-                Static and AI powered roadmaps
+                Interative roadmaps and Personality quiz
               </span>
               <span className="mt-2 text-white">
                 For Free version, you will get access to variety of roadmaps for
@@ -128,71 +128,94 @@ export default function Home() {
             </div>
           </li>
         </ol>
+        <div className="relative isolate">
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+          >
+            <div
+              style={{
+                clipPath:
+                  "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+              }}
+              className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+            />
+          </div>
+</div>
+        <div className="mx-auto mb-32 mt-32 max-w-5xl sm:mt-56">
+        <div className="mb-12 px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl sm:text-center">
+            <h2 id="roadmaps" className="mt-2 font-bold text-4xl text-creme sm:text-5xl">
+              Roadmaps for computer science fields
+            </h2>
+            <p className="mt-4 text-lg text-white">Get your learning journey started with these modern interactable roadmaps </p>
+         
+          </div>
+        </div>
 
-        <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <div className="mt-16 flow-root sm:mt-24">
             <div className="-m-2 rounded-xl">
-              <div className="flex flex-wrap justify-center max-w-4xl mx-auto gap-4 p-4">
+              <div className="flex flex-wrap justify-center max-w-4xl mx-auto gap-4 p-4 " >
                 {/* Web Button */}
                 <Link
                   href="/roadmaps/webdevelopment"
-                  className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 whitespace-nowrap"
+                  className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-lblack shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 whitespace-nowrap"
                 >
                   Web Development
                 </Link>
                 {/* Mobile Button */}
                 <Link
                   href="/roadmaps/mobiledevelopment"
-                  className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 whitespace-nowrap"
+                  className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-lblack shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 whitespace-nowrap"
                 >
                   Mobile App Development
                 </Link>
                 {/* Data Button */}
                 <Link
                   href="/roadmaps/datascience"
-                  className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 whitespace-nowrap"
+                  className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-lblack shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 whitespace-nowrap"
                 >
                   Data Science
                 </Link>
                 {/* Cloud Button */}
                 <Link
                   href="/roadmaps/cloudcomputing"
-                  className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 whitespace-nowrap"
+                  className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-lblack shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 whitespace-nowrap"
                 >
                   Cloud Computing
                 </Link>
                 {/* Devops Button */}
                 <Link
                   href="/roadmaps/devops"
-                  className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 whitespace-nowrap"
+                  className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-lblack shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 whitespace-nowrap"
                 >
                   DevOps
                 </Link>
                 {/* AI Button */}
                 <Link
                   href="/roadmaps/ai"
-                  className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 whitespace-nowrap"
+                  className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-lblack shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 whitespace-nowrap"
                 >
                   Artificial Intelligence
                 </Link>
                 {/* Blockchain Button */}
                 <Link
                   href="/roadmaps/blockchain"
-                  className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 whitespace-nowrap"
+                  className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-lblack shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 whitespace-nowrap"
                 >
                   Blockchain
                 </Link>
                 {/* Databases Button */}
                 <Link
-                  href="/frontend"
-                  className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 whitespace-nowrap"
+                  href="/roadmaps/networkandadmin"
+                  className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-lblack shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 whitespace-nowrap"
                 >
                   Network and Systems Administration
                 </Link>
                 {/* Cyber Button */}
                 <Link
                   href="/roadmaps/cybersecurity"
-                  className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 whitespace-nowrap"
+                  className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-lblack shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 whitespace-nowrap"
                 >
                   Cyber Security
                 </Link>

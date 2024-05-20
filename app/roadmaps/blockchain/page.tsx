@@ -172,8 +172,8 @@ const BlockchainRoadmap = () => {
   };
 
   return (
-    <MaxWidthWrapper className="text-creme mb-12 mt-12 sm:mt-20 flex flex-col items-center justify-center text-center">
-      <h1 className="max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl mb-10">
+    <MaxWidthWrapper className="text-lblack mb-12 mt-12 sm:mt-20 flex flex-col items-center justify-center text-center">
+      <h1 className="text-creme max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl mb-10">
         Blockchain Roadmap
       </h1>
       <div className="relative isolate">
@@ -204,13 +204,13 @@ const BlockchainRoadmap = () => {
             Basic Blockchain Knowledge
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={blockchainStructureRef}
               onClick={() => handleClick(references["Blockchain Structure"])}
             >
               Blockchain Structure
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={blockchainOperationsRef}
               onClick={() =>
                 handleClick(references["Basic Blockchain Operations"])
@@ -218,7 +218,7 @@ const BlockchainRoadmap = () => {
             >
               Basic Blockchain Operations
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={applicationsUsesRef}
               onClick={() => handleClick(references["Applications and Uses"])}
             >
@@ -234,25 +234,25 @@ const BlockchainRoadmap = () => {
             General Blockchain Knowledge
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={cryptographyRef}
               onClick={() => handleClick(references["Cryptography"])}
             >
               Cryptography
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={consensusProtocolsRef}
               onClick={() => handleClick(references["Consensus Protocols"])}
             >
               Consensus Protocols
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={storageRef}
               onClick={() => handleClick(references["Storage"])}
             >
               Storage
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={blockchainInteroperabilityRef}
               onClick={() =>
                 handleClick(references["Blockchain Interoperability"])
@@ -270,22 +270,22 @@ const BlockchainRoadmap = () => {
             Blockchains
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={solanaRef}
               onClick={() => handleClick(references["Solana"])}
             >
               Solana
             </Circle>
-            <Circle ref={tonRef} onClick={() => handleClick(references["TON"])}>
+            <Circle className="circle-c" ref={tonRef} onClick={() => handleClick(references["TON"])}>
               TON
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={evmBasedRef}
               onClick={() => handleClick(references["EVM-Based"])}
             >
               EVM-Based
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={l2BlockchainsRef}
               onClick={() => handleClick(references["L2 Blockchains"])}
             >
@@ -299,19 +299,19 @@ const BlockchainRoadmap = () => {
             Oracles
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={hybridSmartContractsRef}
               onClick={() => handleClick(references["Hybrid Smart Contracts"])}
             >
               Hybrid Smart Contracts
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={chainlinkRef}
               onClick={() => handleClick(references["Chainlink"])}
             >
               Chainlink
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={oracleNetworksRef}
               onClick={() => handleClick(references["Oracle Networks"])}
             >
@@ -327,32 +327,32 @@ const BlockchainRoadmap = () => {
             Smart Contracts
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={ercTokensRef}
               onClick={() => handleClick(references["ERC Tokens"])}
             >
               ERC Tokens
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={cryptoWalletsRef}
               onClick={() => handleClick(references["Crypto Wallets"])}
             >
               Crypto Wallets
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={cryptoFaucetsRef}
               onClick={() => handleClick(references["Crypto Faucets"])}
             >
               Crypto Faucets
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={decentralizedStorageRef}
               onClick={() => handleClick(references["Decentralized Storage"])}
             >
               Decentralized Storage
             </Circle>
           </div>
-          <Circle
+          <Circle 
             ref={smartContractFrameworksRef}
             onClick={() =>
               handleClick(references["Basic Blockchain Knowledge"])
@@ -361,25 +361,25 @@ const BlockchainRoadmap = () => {
             Smart Contract Frameworks
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={hardhatRef}
               onClick={() => handleClick(references["Hardhat"])}
             >
               Hardhat
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={brownieRef}
               onClick={() => handleClick(references["Brownie"])}
             >
               Brownie
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={truffleRef}
               onClick={() => handleClick(references["Truffle"])}
             >
               Truffle
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={foundryRef}
               onClick={() => handleClick(references["Foundry"])}
             >
@@ -395,13 +395,13 @@ const BlockchainRoadmap = () => {
             Security
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={practicesRef}
               onClick={() => handleClick(references["Practices"])}
             >
               Practices
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={fuzzTestingRef}
               onClick={() =>
                 handleClick(references["Fuzz Testing & Static Analysis"])
@@ -409,13 +409,13 @@ const BlockchainRoadmap = () => {
             >
               Fuzz Testing & Static Analysis
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={commonThreatVectorsRef}
               onClick={() => handleClick(references["Common Threat Vectors"])}
             >
               Common Threat Vectors
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={sourceRandomnessAttacksRef}
               onClick={() =>
                 handleClick(references["Source of Randomness Attacks"])
@@ -433,13 +433,13 @@ const BlockchainRoadmap = () => {
             Tools
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={slitherRef}
               onClick={() => handleClick(references["Slither"])}
             >
               Slither
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={manticoreRef}
               onClick={() => handleClick(references["Manticore"])}
             >
@@ -476,19 +476,19 @@ const BlockchainRoadmap = () => {
             Repo Hosting Services
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={githubRef}
               onClick={() => handleClick(references["GitHub"])}
             >
               GitHub
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={gitlabRef}
               onClick={() => handleClick(references["GitLab"])}
             >
               GitLab
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={bitbucketRef}
               onClick={() => handleClick(references["BitBucket"])}
             >
@@ -502,13 +502,13 @@ const BlockchainRoadmap = () => {
             dApps - Decentralized Applications
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={clientLibrariesRef}
               onClick={() => handleClick(references["Client Libraries"])}
             >
               Client Libraries
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={clientNodesRef}
               onClick={() => handleClick(references["Client Nodes"])}
             >
@@ -524,19 +524,19 @@ const BlockchainRoadmap = () => {
             Frontend Frameworks
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={reactRef}
               onClick={() => handleClick(references["React"])}
             >
               React
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={angularRef}
               onClick={() => handleClick(references["Angular"])}
             >
               Angular
             </Circle>
-            <Circle ref={vueRef} onClick={() => handleClick(references["Vue"])}>
+            <Circle className="circle-c" ref={vueRef} onClick={() => handleClick(references["Vue"])}>
               Vue
             </Circle>
           </div>
@@ -549,25 +549,25 @@ const BlockchainRoadmap = () => {
             Node as a Service
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={alchemyRef}
               onClick={() => handleClick(references["Alchemy"])}
             >
               Alchemy
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={infuraRef}
               onClick={() => handleClick(references["Infura"])}
             >
               Infura
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={moralisNodeRef}
               onClick={() => handleClick(references["Moralis"])}
             >
               Moralis
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={quicknodeRef}
               onClick={() => handleClick(references["QuickNode"])}
             >
@@ -581,19 +581,19 @@ const BlockchainRoadmap = () => {
             Supporting Languages
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={javascriptRef}
               onClick={() => handleClick(references["JavaScript"])}
             >
               JavaScript
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={pythonRef}
               onClick={() => handleClick(references["Python"])}
             >
               Python
             </Circle>
-            <Circle ref={goRef} onClick={() => handleClick(references["Go"])}>
+            <Circle className="circle-c" ref={goRef} onClick={() => handleClick(references["Go"])}>
               Go
             </Circle>
           </div>
@@ -604,7 +604,7 @@ const BlockchainRoadmap = () => {
             Building for Scale
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={statePaymentChannelsRef}
               onClick={() =>
                 handleClick(references["State and Payment Channels"])
@@ -612,19 +612,19 @@ const BlockchainRoadmap = () => {
             >
               State and Payment Channels
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={validiumRef}
               onClick={() => handleClick(references["Validium"])}
             >
               Validium
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={ethereum2Ref}
               onClick={() => handleClick(references["Ethereum 2.0"])}
             >
               Ethereum 2.0
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={sidechainsRef}
               onClick={() => handleClick(references["Sidechains"])}
             >
@@ -808,24 +808,29 @@ const BlockchainRoadmap = () => {
           fromRef={securityRef}
           toRef={practicesRef}
         />
-        <AnimatedBeam
+
+<AnimatedBeam
           duration={10}
           containerRef={containerRef}
-          fromRef={practicesRef}
+          fromRef={securityRef}
           toRef={fuzzTestingRef}
         />
-        <AnimatedBeam
+
+<AnimatedBeam
           duration={10}
           containerRef={containerRef}
-          fromRef={practicesRef}
+          fromRef={securityRef}
           toRef={commonThreatVectorsRef}
         />
-        <AnimatedBeam
+         <AnimatedBeam
           duration={10}
           containerRef={containerRef}
-          fromRef={practicesRef}
+          fromRef={securityRef}
           toRef={sourceRandomnessAttacksRef}
         />
+
+        
+       
         <AnimatedBeam
           duration={10}
           containerRef={containerRef}

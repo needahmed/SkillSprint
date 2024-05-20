@@ -65,21 +65,21 @@ const DataScienceRoadmap = () => {
   const references = {
     Mathematics: "https://www.khanacademy.org/math",
     "Linear Algebra, Calculus, Mathematical Analysis":
-      "https://www.coursera.org/learn/mathematics-machine-learning",
+      "https://byjus.com/maths/differential-calculus/",
     "Differential Calculus":
-      "https://www.coursera.org/learn/algebra-differential-calculus",
+      "https://byjus.com/maths/differential-calculus/",
     Statistics: "https://www.khanacademy.org/math/statistics-probability",
-    "Statistics, CLT": "https://www.coursera.org/learn/intro-statistics",
-    "Hypothesis Testing": "https://www.coursera.org/learn/hypothesis-testing",
+    "Statistics, CLT": "https://www.investopedia.com/terms/c/central_limit_theorem.asp",
+    "Hypothesis Testing": "https://www.investopedia.com/terms/h/hypothesistesting.asp",
     "Probability and Sampling":
       "https://www.coursera.org/learn/probability-statistics",
-    "AB Testing": "https://www.coursera.org/learn/ab-testing",
+    "AB Testing": "https://www.optimizely.com/optimization-glossary/ab-testing/#:~:text=A%2FB%20testing%20(also%20known,determine%20which%20one%20performs%20better.",
     Econometrics:
       "https://www.khanacademy.org/economics-finance-domain/macroeconomics",
     "Pre-requisites of Econometrics":
-      "https://www.coursera.org/learn/fundamentals-econometrics",
+      "https://www.imf.org/external/pubs/ft/fandd/2011/12/basics.htm#:~:text=Econometrics%20uses%20economic%20theory%2C%20mathematics,useful%20tools%20for%20economic%20policymaking.",
     "Regressions, time series, fitting distributions":
-      "https://www.coursera.org/learn/econometrics",
+      "https://modelassist.epixanalytics.com/space/EA/26586613/Fitting+time-series+models+to+data",
     Coding: "https://www.kaggle.com/learn/python",
     "Learn Python Programming Language": "https://www.kaggle.com/learn/python",
     "Data Structures and Algorithms (Python)":
@@ -88,17 +88,17 @@ const DataScienceRoadmap = () => {
       "https://www.khanacademy.org/computing/computer-programming/sql",
     "Exploratory Data Analysis (EDA)": "https://www.kaggle.com/learn/eda",
     "Data understanding, Data Analysis, Visualization":
-      "https://www.coursera.org/learn/data-analysis-visualization",
+      "https://www.tableau.com/learn/articles/data-visualization",
     "Machine Learning": "https://www.coursera.org/learn/machine-learning",
     "Classic ML (Sup. and Unsup.)":
-      "https://www.coursera.org/learn/machine-learning",
+      "https://www.geeksforgeeks.org/difference-between-supervised-and-unsupervised-learning/",
     "Advanced ML (Ensembles, NNs)":
-      "https://www.coursera.org/specializations/deep-learning",
+      "https://www.researchgate.net/publication/358974748_Boosted_Ensemble_Learning_based_on_Randomized_NNs_for_Time_Series_Forecasting",
     "Deep Learning": "https://www.coursera.org/specializations/deep-learning",
     "Fully connected NN, CNN, RNN, LSTM":
-      "https://www.coursera.org/specializations/deep-learning",
-    MLOps: "https://www.coursera.org/learn/mlops",
-    "Deployment models, CI/CD": "https://www.coursera.org/learn/mlops",
+      "https://medium.com/@sprhlabs/understanding-deep-learning-dnn-rnn-lstm-cnn-and-r-cnn-6602ed94dbff",
+    MLOps: "https://aws.amazon.com/what-is/mlops/#:~:text=Machine%20learning%20operations%20(MLOps)%20are,deliver%20value%20to%20your%20customers.",
+    "Deployment models, CI/CD": "https://www.redhat.com/en/topics/devops/what-is-ci-cd",
   };
 
   const handleClick = (url: string) => {
@@ -106,8 +106,8 @@ const DataScienceRoadmap = () => {
   };
 
   return (
-    <MaxWidthWrapper className="text-creme mb-12 mt-12 sm:mt-20 flex flex-col items-center justify-center text-center">
-      <h1 className="max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl mb-10">
+    <MaxWidthWrapper className="text-lblack mb-12 mt-12 sm:mt-20 flex flex-col items-center justify-center text-center">
+      <h1 className="text-creme max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl mb-10">
         Data Science Roadmap
       </h1>
       <div className="relative isolate">
@@ -136,7 +136,7 @@ const DataScienceRoadmap = () => {
             Mathematics
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={linearAlgebraRef}
               onClick={() =>
                 handleClick(
@@ -146,7 +146,7 @@ const DataScienceRoadmap = () => {
             >
               Linear Algebra, Calculus, Mathematical Analysis
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={calculusRef}
               onClick={() => handleClick(references["Differential Calculus"])}
             >
@@ -160,19 +160,19 @@ const DataScienceRoadmap = () => {
             Statistics
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={statsCLTRef}
               onClick={() => handleClick(references["Statistics, CLT"])}
             >
               Statistics, CLT
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={hypothesisTestingRef}
               onClick={() => handleClick(references["Hypothesis Testing"])}
             >
               Hypothesis Testing
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={probabilitySamplingRef}
               onClick={() =>
                 handleClick(references["Probability and Sampling"])
@@ -180,7 +180,7 @@ const DataScienceRoadmap = () => {
             >
               Probability and Sampling
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={abTestingRef}
               onClick={() => handleClick(references["AB Testing"])}
             >
@@ -194,7 +194,7 @@ const DataScienceRoadmap = () => {
             Econometrics
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={preReqEconometricsRef}
               onClick={() =>
                 handleClick(references["Pre-requisites of Econometrics"])
@@ -202,7 +202,7 @@ const DataScienceRoadmap = () => {
             >
               Pre-requisites of Econometrics
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={regressionsRef}
               onClick={() =>
                 handleClick(
@@ -220,7 +220,7 @@ const DataScienceRoadmap = () => {
             Coding
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={learnPythonRef}
               onClick={() =>
                 handleClick(references["Learn Python Programming Language"])
@@ -228,7 +228,7 @@ const DataScienceRoadmap = () => {
             >
               Learn Python Programming Language
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={dataStructuresRef}
               onClick={() =>
                 handleClick(
@@ -238,7 +238,7 @@ const DataScienceRoadmap = () => {
             >
               Data Structures and Algorithms (Python)
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={learnSQLRef}
               onClick={() => handleClick(references["Learn SQL"])}
             >
@@ -254,7 +254,7 @@ const DataScienceRoadmap = () => {
             Exploratory Data Analysis (EDA)
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={dataUnderstandingRef}
               onClick={() =>
                 handleClick(
@@ -264,7 +264,7 @@ const DataScienceRoadmap = () => {
             >
               Data Understanding
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={dataAnalysisRef}
               onClick={() =>
                 handleClick(
@@ -274,7 +274,7 @@ const DataScienceRoadmap = () => {
             >
               Data Analysis
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={dataVisualizationRef}
               onClick={() =>
                 handleClick(
@@ -292,7 +292,7 @@ const DataScienceRoadmap = () => {
             Machine Learning
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={classicMLRef}
               onClick={() =>
                 handleClick(references["Classic ML (Sup. and Unsup.)"])
@@ -300,7 +300,7 @@ const DataScienceRoadmap = () => {
             >
               Classic ML (Sup. and Unsup.)
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={advancedMLRef}
               onClick={() =>
                 handleClick(references["Advanced ML (Ensembles, NNs)"])
@@ -316,7 +316,7 @@ const DataScienceRoadmap = () => {
             Deep Learning
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={nnRef}
               onClick={() =>
                 handleClick(references["Fully connected NN, CNN, RNN, LSTM"])
@@ -324,7 +324,7 @@ const DataScienceRoadmap = () => {
             >
               Fully connected NN
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={cnnRef}
               onClick={() =>
                 handleClick(references["Fully connected NN, CNN, RNN, LSTM"])
@@ -332,7 +332,7 @@ const DataScienceRoadmap = () => {
             >
               CNN
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={rnnRef}
               onClick={() =>
                 handleClick(references["Fully connected NN, CNN, RNN, LSTM"])
@@ -340,7 +340,7 @@ const DataScienceRoadmap = () => {
             >
               RNN
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={lstmRef}
               onClick={() =>
                 handleClick(references["Fully connected NN, CNN, RNN, LSTM"])
@@ -349,14 +349,14 @@ const DataScienceRoadmap = () => {
               LSTM
             </Circle>
           </div>
-          <Circle
+          <Circle 
             ref={mlOpsRef}
             onClick={() => handleClick(references["MLOps"])}
           >
             MLOps
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={deploymentRef}
               onClick={() =>
                 handleClick(references["Deployment models, CI/CD"])

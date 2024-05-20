@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import Image from "next/image";
 import emailjs from "emailjs-com";
 import { Toaster, toast } from "sonner";
 
@@ -75,7 +74,7 @@ const CounsellingPage = () => {
 
         <Link
           href="/schedule"
-          className="inline-flex items-center bg-creme hover:bg-brown-200 text-white font-bold py-1 px-4 rounded-lg mt-5"
+          className="inline-flex items-center bg-creme hover:bg-brown-200 text-lblack  hover:bg-gray-600 hover:text-white font-bold py-1 px-4 rounded-lg mt-5"
         >
           Book a Session <ArrowRight className="h-5 w-5 ml-2" />
         </Link>
@@ -95,6 +94,7 @@ const CounsellingPage = () => {
           />
         </div>
       </div>
+
       <MaxWidthWrapper className="mx-auto max-w-6xl px-6 lg:px-8">
         <h2 className="text-4xl font-bold text-creme">Why Our Counseling?</h2>
         <p className="mt-4 text-white sm:text-lg">
@@ -151,39 +151,51 @@ const CounsellingPage = () => {
         {/* Contact Form */}
         <div className="my-12">
           <h2 className="text-4xl font-bold text-creme">Contact Us</h2>
-          <form className="text-white mt-4" onSubmit={handleSubmit}>
-            <label htmlFor="name">Name:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              className="w-full p-2 mt-2 text-black"
-              value={formData.name}
-              onChange={handleChange}
-              required
-            />
-            <label htmlFor="email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              className="w-full p-2 mt-2 text-black"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
-            <label htmlFor="message">Message:</label>
-            <textarea
-              id="message"
-              name="message"
-              className="w-full p-2 mt-2 text-black"
-              value={formData.message}
-              onChange={handleChange}
-              required
-            ></textarea>
+          <form className="text-white mt-4 space-y-4" onSubmit={handleSubmit}>
+            <div className="space-y-2">
+              <label htmlFor="name" className="block text-creme font-semibold">
+                Name:
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                className="w-full p-2 rounded-lg text-black"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="space-y-2">
+              <label htmlFor="email" className="block text-creme font-semibold">
+                Email:
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                className="w-full p-2 rounded-lg text-black"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="space-y-2">
+              <label htmlFor="message" className="block text-creme font-semibold">
+                Message:
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                className="w-full p-2 rounded-lg text-black"
+                value={formData.message}
+                onChange={handleChange}
+                required
+              ></textarea>
+            </div>
             <button
               type="submit"
-              className="bg-creme hover:bg-brown-200 text-white font-bold py-2 px-4 rounded-lg mt-4"
+              className="bg-creme text-lblack hover:bg-gray-600 hover:text-white font-bold py-2 px-4 rounded-lg mt-4"
             >
               Send
             </button>

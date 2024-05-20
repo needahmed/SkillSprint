@@ -1,6 +1,5 @@
 import { cn } from "@/lib/utils";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-
 import { buttonVariants } from "@/components/ui/button";
 import {
   Tooltip,
@@ -15,8 +14,7 @@ import Link from "next/link";
 const pricingItems = [
   {
     plan: "Free",
-    tagline: "For basic roadmaps.",
-    // quota: 10,
+    tagline: "For interactive roadmaps.",
     features: [
       {
         text: "All basic roadmaps",
@@ -41,9 +39,8 @@ const pricingItems = [
     ],
   },
   {
-    plan: "Pro",
-    tagline: "For Personalized career recommendation using AI",
-    // quota: 100,
+    plan: "Premium",
+    tagline: "For personalized career recommendation",
     features: [
       {
         text: "All basic roadmaps",
@@ -101,8 +98,8 @@ const Page = () => {
                     "border border-gray-200": plan !== "Pro",
                   })}
                 >
-                  {plan === "Pro" && (
-                    <div className="absolute -top-5 left-0 right-0 mx-auto w-32 rounded-full bg-gradient-to-r  border-black from-creme to-white px-3 py-2 text-sm font-medium text-black">
+                  {plan === "Premium" && (
+                    <div className="absolute -top-5 left-0 right-0 mx-auto w-48 rounded-full bg-gradient-to-r from-purple-600 to-blue-600 px-3 py-2 text-sm font-medium text-white shadow-md">
                       Upgrade now
                     </div>
                   )}
@@ -128,10 +125,13 @@ const Page = () => {
 
                   <div className="flex h-20 items-center justify-center border-b border-t border-gray-200 bg-gray-50">
                     <div className="flex items-center space-x-1">
-                      {/* <p>{quota.toLocaleString()} PDFs/mo included</p> */}
+                      <p>
+                        Interactive Roadmaps{" "}
+                        {plan === "Premium" && "+ Personalized Quiz"}
+                      </p>
                       <Tooltip delayDuration={300}>
                         <TooltipTrigger className="cursor-default ml-1.5">
-                          <HelpCircle className="h-4 w-4 text-black" />
+                          <HelpCircle className="h-4 w-4 text-black bg-white" />
                         </TooltipTrigger>
                         <TooltipContent className="w-80 p-2">
                           {/* How many PDFs you can upload per month. */}

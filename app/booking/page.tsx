@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const BookSessionPage = () => {
   return (
-    <>
-      <div className="relative isolate">
+    <div className="flex flex-col min-h-screen overflow-hidden bg-gray-100 p-6">
+      <div className="relative isolate flex-grow">
         <div
           aria-hidden="true"
           className="pointer-events-none absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -19,11 +19,11 @@ const BookSessionPage = () => {
           />
         </div>
       </div>
-      <MaxWidthWrapper className="text-creme mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center">
-        <h1 className="text-5xl font-bold md:text-6xl lg:text-7xl">
+      <MaxWidthWrapper className="flex flex-col items-center justify-center text-center flex-grow overflow-hidden">
+        <h1 className="mt-5 max-w-prose text-white sm:text-lg">
           Book a Session
         </h1>
-        <p className="mt-5 text-lg">
+        <p className="mt-5 text-lg text-creme">
           Welcome to our career counseling service. Please fill out the form
           below to book a session with one of our experienced counselors.
         </p>
@@ -127,7 +127,7 @@ const BookSessionPage = () => {
 
           <button
             type="submit"
-            className="text-white bg-creme hover: hover:bg-gray-600 focus:ring-4 focus:outline-none focus::ring-gray-500 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+            className="text-white bg-creme hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-gray-500 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
           >
             Book Session
           </button>
@@ -141,7 +141,7 @@ const BookSessionPage = () => {
           </p>
         </div>
       </MaxWidthWrapper>
-    </>
+    </div>
   );
 };
 

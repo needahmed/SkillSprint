@@ -15,7 +15,7 @@ const Circle = forwardRef<
       ref={ref}
       className={cn(
         "relative z-10 flex items-center justify-center rounded-full border-2 bg-white p-3 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)] text-center transition duration-300 cursor-pointer hover:bg-creme hover:text-white hover:shadow-lg",
-        "h-16 w-40 md:h-20 md:w-48 lg:h-24 lg:w-56 xl:h-28 xl:w-64",
+        "h-16 w-40 md:h-20 md:w-48 lg:h-24 lg:w-56 xl:h-28 xl:w-56",
         className
       )}
       onClick={onClick}
@@ -106,8 +106,8 @@ const NetworkAdminRoadmap = () => {
   };
 
   return (
-    <MaxWidthWrapper className="text-creme mb-12 mt-12 sm:mt-20 flex flex-col items-center justify-center text-center">
-      <h1 className="max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl mb-10">
+    <MaxWidthWrapper className="text-lblack mb-12 mt-12 sm:mt-20 flex flex-col items-center justify-center text-center">
+      <h1 className="text-creme max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl mb-10">
         Network and Systems Administration Roadmap
       </h1>
       <div className="relative isolate">
@@ -136,25 +136,25 @@ const NetworkAdminRoadmap = () => {
             Networking Basics
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={protocolsRef}
               onClick={() => handleClick(references.Protocols)}
             >
               Protocols
             </Circle>
-            <Circle ref={ipRef} onClick={() => handleClick(references.IP)}>
+            <Circle className="circle-c" ref={ipRef} onClick={() => handleClick(references.IP)}>
               IP
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={tcpUdpRef}
               onClick={() => handleClick(references["TCP/UDP"])}
             >
               TCP/UDP
             </Circle>
-            <Circle ref={dnsRef} onClick={() => handleClick(references.DNS)}>
+            <Circle  className="circle-c" ref={dnsRef} onClick={() => handleClick(references.DNS)}>
               DNS
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={subnettingRef}
               onClick={() => handleClick(references.Subnetting)}
             >
@@ -168,25 +168,25 @@ const NetworkAdminRoadmap = () => {
             Networking
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={routersRef}
               onClick={() => handleClick(references.Routers)}
             >
               Routers
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={switchesRef}
               onClick={() => handleClick(references.Switches)}
             >
               Switches
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={firewallsRef}
               onClick={() => handleClick(references.Firewalls)}
             >
               Firewalls
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={wirelessRef}
               onClick={() => handleClick(references.Wireless)}
             >
@@ -200,13 +200,13 @@ const NetworkAdminRoadmap = () => {
             Systems
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={linuxRef}
               onClick={() => handleClick(references.Linux)}
             >
               Linux
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={windowsServerRef}
               onClick={() => handleClick(references["Windows Server"])}
             >
@@ -220,13 +220,13 @@ const NetworkAdminRoadmap = () => {
             Virtualization
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={vmwareRef}
               onClick={() => handleClick(references.VMware)}
             >
               VMware
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={hyperVRef}
               onClick={() => handleClick(references["Hyper-V"])}
             >
@@ -240,16 +240,16 @@ const NetworkAdminRoadmap = () => {
             Cloud Computing
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle ref={awsRef} onClick={() => handleClick(references.AWS)}>
+            <Circle  className="circle-c" ref={awsRef} onClick={() => handleClick(references.AWS)}>
               AWS
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={azureRef}
               onClick={() => handleClick(references.Azure)}
             >
               Azure
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={googleCloudRef}
               onClick={() => handleClick(references["Google Cloud"])}
             >
@@ -263,19 +263,19 @@ const NetworkAdminRoadmap = () => {
             Monitoring
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={nagiosRef}
               onClick={() => handleClick(references.Nagios)}
             >
               Nagios
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={prometheusRef}
               onClick={() => handleClick(references.Prometheus)}
             >
               Prometheus
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={zabbixRef}
               onClick={() => handleClick(references.Zabbix)}
             >
@@ -289,16 +289,16 @@ const NetworkAdminRoadmap = () => {
             Security
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={firewallsSecRef}
               onClick={() => handleClick(references.FirewallsSec)}
             >
               Firewalls
             </Circle>
-            <Circle ref={vpnRef} onClick={() => handleClick(references.VPN)}>
+            <Circle className="circle-c" ref={vpnRef} onClick={() => handleClick(references.VPN)}>
               VPN
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={idsIpsRef}
               onClick={() => handleClick(references["IDS/IPS"])}
             >

@@ -19,10 +19,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="light">
+    <html lang="en" className="light h-full">
       <body
         className={cn(
-          "min-h-screen font-sans antialiased grainy bg-lblack",
+          "min-h-screen flex flex-col font-sans antialiased grainy bg-lblack",
           inter.className
         )}
       >
@@ -32,9 +32,9 @@ export default function RootLayout({
           }}
         >
           <Navbar />
-          {children}
+          <main className="flex-grow">{children}</main>
+          <Footer />
         </ClerkProvider>
-        <Footer />
       </body>
     </html>
   );

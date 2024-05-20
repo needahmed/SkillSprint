@@ -4,8 +4,8 @@ import { ArrowRight } from "lucide-react";
 
 const QuizIntroPage = () => {
   return (
-    <>
-      <div className="relative isolate">
+    <div className="flex flex-col min-h-screen">
+      <div className="relative isolate flex-grow">
         <div
           aria-hidden="true"
           className="pointer-events-none absolute inset-x-0 top-0 -z-10 transform-gpu overflow-hidden blur-3xl"
@@ -19,7 +19,7 @@ const QuizIntroPage = () => {
           />
         </div>
       </div>
-      <MaxWidthWrapper className="text-creme mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center">
+      <MaxWidthWrapper className="text-creme mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center flex-grow">
         <h1 className="max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl">
           Discover Your Path in Computer Science
         </h1>
@@ -40,7 +40,8 @@ const QuizIntroPage = () => {
           Start the Quiz <ArrowRight className="h-5 w-5" />
         </Link>
       </MaxWidthWrapper>
-    </>
+     
+    </div>
   );
 };
 

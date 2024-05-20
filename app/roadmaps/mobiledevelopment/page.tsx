@@ -15,7 +15,7 @@ const Circle = forwardRef<
       ref={ref}
       className={cn(
         "relative z-10 flex items-center justify-center rounded-full border-2 bg-white p-3 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)] text-center transition duration-300 cursor-pointer hover:bg-creme hover:text-white hover:shadow-lg",
-        "h-16 w-40 md:h-20 md:w-48 lg:h-24 lg:w-56 xl:h-28 xl:w-64",
+        "h-16 w-40 md:h-20 md:w-45 lg:h-24 lg:w-50 xl:h-28 xl:w-56",
         className
       )}
       onClick={onClick}
@@ -108,17 +108,17 @@ const FlutterRoadmap = () => {
     Functions: "https://dart.dev/guides/language/language-tour#functions",
     Operations: "https://dart.dev/guides/language/language-tour#operators",
     "Setup Development Environment":
-      "https://flutter.dev/docs/get-started/install",
+      "https://www.youtube.com/watch?v=6IVNyJB1wzo",
     "Flutter CLI": "https://flutter.dev/docs/reference/flutter-cli",
     "VS Code": "https://code.visualstudio.com/docs",
     "Android Studio": "https://developer.android.com/studio",
     Widgets: "https://flutter.dev/docs/development/ui/widgets",
     "Inherited Widget":
-      "https://flutter.dev/docs/development/ui/widgets-intro#inheritedwidget",
+      "https://api.flutter.dev/flutter/widgets/InheritedWidget-class.html",
     "Stateless Widgets":
-      "https://flutter.dev/docs/development/ui/widgets-intro#statelesswidget",
+      "https://api.flutter.dev/flutter/widgets/StatelessWidget-class.html",
     "Stateful Widgets":
-      "https://flutter.dev/docs/development/ui/widgets-intro#statefulwidget",
+      "https://api.flutter.dev/flutter/widgets/StatefulWidget-class.html",
     "Working with Assets":
       "https://flutter.dev/docs/development/ui/assets-and-images",
     Fonts: "https://flutter.dev/docs/cookbook/design/fonts",
@@ -131,8 +131,8 @@ const FlutterRoadmap = () => {
       "https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple#dependency-injection",
     "Design Patterns": "https://refactoring.guru/design-patterns",
     "SOLID Principles": "https://en.wikipedia.org/wiki/SOLID",
-    OOP: "https://en.wikipedia.org/wiki/Object-oriented_programming",
-    "Package Manager": "https://dart.dev/tools/pub",
+    OOP: "https://www.geeksforgeeks.org/a-step-by-step-approach-to-learn-object-oriented-programming/",
+    "Package Manager": "https://medium.com/@pranamsharma.1997/what-is-android-package-manager-its-function-s-with-example-56b7d818ac84#:~:text=Package%20Manager%20is%20an%20essential,installed%20on%20an%20Android%20device.",
     "pub.dev": "https://pub.dev/",
     "flutter pub / dart pub": "https://dart.dev/tools/pub",
     "Working with APIs":
@@ -141,14 +141,14 @@ const FlutterRoadmap = () => {
       "https://dart.dev/guides/libraries/library-tour#dartwebsocket",
     GraphQL: "https://graphql.org/",
     "RESTful APIs": "https://restfulapi.net/",
-    Storage: "https://flutter.dev/docs/development/data-and-backend/storage",
+    Storage: "https://developer.android.com/training/data-storage",
     SQLite: "https://pub.dev/packages/sqflite",
     "Shared Preferences": "https://pub.dev/packages/shared_preferences",
     Firebase: "https://firebase.google.com/docs/flutter/setup",
-    "Advanced Dart": "https://dart.dev/guides/language/language-tour",
+    "Advanced Dart": "https://www.udemy.com/course/complete-dart-programming-language-basic-to-advanced/?utm_source=adwords&utm_medium=udemyads&utm_campaign=DSA_Catchall_la.EN_cc.ROW&campaigntype=Search&portfolio=ROW-English&language=EN&product=Course&test=&audience=DSA&topic=&priority=&utm_content=deal4584&utm_term=_._ag_88010211481_._ad_535397282064_._kw__._de_c_._dm__._pl__._ti_dsa-406594358574_._li_1011080_._pd__._&matchtype=&gad_source=1&gclid=Cj0KCQjw6auyBhDzARIsALIo6v_p_hzxi0dINwvT-AcFb8_w2i9WYV-nLNLT1UW6baqIfbItzLAYiIIaAjgDEALw_wcB",
     Lists: "https://dart.dev/guides/language/language-tour#lists",
-    Collections: "https://dart.dev/guides/language/language-tour#collections",
-    Lambdas: "https://dart.dev/guides/language/language-tour#lambdas",
+    Collections: "https://dart.dev/language/collections",
+    Lambdas: "https://dart.dev/tools/linter-rules/unnecessary_lambdas",
     "Functional Programming":
       "https://en.wikipedia.org/wiki/Functional_programming",
     "Core Libraries": "https://dart.dev/guides/libraries",
@@ -160,7 +160,7 @@ const FlutterRoadmap = () => {
       "https://api.flutter.dev/flutter/foundation/ValueNotifier-class.html",
     Riverpod: "https://riverpod.dev/",
     "Reactive Programming":
-      "https://www.flutterclutter.dev/flutter/tutorials/reactive-programming-streams-bloc/2020/31/",
+      "https://cfdevelop.medium.com/reactive-programming-in-flutter-understanding-the-power-of-observables-and-computed-values-with-7a372db59e05",
     Animations: "https://flutter.dev/docs/development/ui/animations",
     "Animation Controller":
       "https://api.flutter.dev/flutter/animation/AnimationController-class.html",
@@ -171,23 +171,23 @@ const FlutterRoadmap = () => {
     Testing: "https://flutter.dev/docs/testing",
     "Dev Tools": "https://flutter.dev/docs/development/tools/devtools/overview",
     "Flutter Inspector":
-      "https://flutter.dev/docs/development/tools/devtools/inspector",
+      "https://docs.flutter.dev/tools/devtools/inspector",
     "Flutter Outline":
-      "https://flutter.dev/docs/development/tools/flutter-outline",
+      "https://www.youtube.com/watch?v=RdPkFd6_fTA",
     "Flutter Internals":
       "https://flutter.dev/docs/development/tools/flutter-outline",
     "Render Objects":
       "https://api.flutter.dev/flutter/rendering/RenderObject-class.html",
-    "3 Trees": "https://flutter.dev/docs/perf/rendering/trees",
+    "3 Trees": "https://medium.com/@omlondhe/flutters-3-tree-architecture-9263b2bd50d1",
     Immutability:
       "https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple#immutability",
-    "CI/CD": "https://flutter.dev/docs/deployment/continuous-delivery",
-    Deployment: "https://flutter.dev/docs/deployment/android",
+    "CI/CD": "https://docs.flutter.dev/deployment/cd",
+    Deployment: "https://docs.flutter.dev/deployment/flavors",
     "App Store": "https://developer.apple.com/app-store/",
-    "Play Store": "https://play.google.com/store",
+    "Play Store": "https://docs.flutter.dev/deployment/android",
     "Guidelines & Protocols": "https://flutter.dev/docs/deployment/android",
     Analytics:
-      "https://flutter.dev/docs/development/data-and-backend/analytics",
+      "https://fluttergems.dev/analytics-consumer-insights/",
     Segment: "https://segment.com/",
     "Mix Panel": "https://mixpanel.com/",
     "Firebase Analytics": "https://firebase.google.com/docs/analytics",
@@ -199,9 +199,9 @@ const FlutterRoadmap = () => {
   };
 
   return (
-    <MaxWidthWrapper className="text-creme mb-12 mt-12 sm:mt-20 flex flex-col items-center justify-center text-center">
-      <h1 className="max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl mb-10">
-        Mobile App Dvelopment Roadmap
+    <MaxWidthWrapper className="text-lblack mb-12 mt-12 sm:mt-20 flex flex-col items-center justify-center text-center">
+      <h1 className="text-creme max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl mb-10">
+        Mobile App Development Roadmap
       </h1>
       <div className="relative isolate">
         <div
@@ -229,25 +229,25 @@ const FlutterRoadmap = () => {
             Learn the Basics of Dart
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={dartPadRef}
               onClick={() => handleClick(references["Dart Pad"])}
             >
               Dart Pad
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={variablesRef}
               onClick={() => handleClick(references.Variables)}
             >
               Variables
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={functionsRef}
               onClick={() => handleClick(references.Functions)}
             >
               Functions
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={operationsRef}
               onClick={() => handleClick(references.Operations)}
             >
@@ -263,19 +263,19 @@ const FlutterRoadmap = () => {
             Setup Development Environment
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={flutterCliRef}
               onClick={() => handleClick(references["Flutter CLI"])}
             >
               Flutter CLI
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={vsCodeRef}
               onClick={() => handleClick(references["VS Code"])}
             >
               VS Code
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={androidStudioRef}
               onClick={() => handleClick(references["Android Studio"])}
             >
@@ -289,19 +289,19 @@ const FlutterRoadmap = () => {
             Widgets
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={inheritedWidgetRef}
               onClick={() => handleClick(references["Inherited Widget"])}
             >
               Inherited Widget
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={statelessWidgetsRef}
               onClick={() => handleClick(references["Stateless Widgets"])}
             >
               Stateless Widgets
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={statefulWidgetsRef}
               onClick={() => handleClick(references["Stateful Widgets"])}
             >
@@ -315,25 +315,20 @@ const FlutterRoadmap = () => {
             Working with Assets
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={fontsRef}
               onClick={() => handleClick(references.Fonts)}
             >
               Fonts
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={imagesRef}
               onClick={() => handleClick(references.Images)}
             >
               Images
             </Circle>
           </div>
-          <Circle
-            ref={versionControlRef}
-            onClick={() => handleClick(references["Version Control Systems"])}
-          >
-            Version Control Systems
-          </Circle>
+
           <Circle ref={gitRef} onClick={() => handleClick(references.Git)}>
             Git
           </Circle>
@@ -350,25 +345,25 @@ const FlutterRoadmap = () => {
             Design Principles
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={dependencyInjectionRef}
               onClick={() => handleClick(references["Dependency Injection"])}
             >
               Dependency Injection
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={designPatternsRef}
               onClick={() => handleClick(references["Design Patterns"])}
             >
               Design Patterns
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={solidPrinciplesRef}
               onClick={() => handleClick(references["SOLID Principles"])}
             >
               SOLID Principles
             </Circle>
-            <Circle ref={oopRef} onClick={() => handleClick(references.OOP)}>
+            <Circle className="circle-c" ref={oopRef} onClick={() => handleClick(references.OOP)}>
               OOP
             </Circle>
           </div>
@@ -379,13 +374,13 @@ const FlutterRoadmap = () => {
             Package Manager
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={pubDevRef}
               onClick={() => handleClick(references["pub.dev"])}
             >
               pub.dev
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={flutterPubRef}
               onClick={() => handleClick(references["flutter pub / dart pub"])}
             >
@@ -399,19 +394,19 @@ const FlutterRoadmap = () => {
             Working with APIs
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={webSocketsRef}
               onClick={() => handleClick(references["Web Sockets"])}
             >
               Web Sockets
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={graphQlRef}
               onClick={() => handleClick(references.GraphQL)}
             >
               GraphQL
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={restfulApisRef}
               onClick={() => handleClick(references["RESTful APIs"])}
             >
@@ -425,19 +420,19 @@ const FlutterRoadmap = () => {
             Storage
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={sqLiteRef}
               onClick={() => handleClick(references.SQLite)}
             >
               SQLite
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={sharedPreferencesRef}
               onClick={() => handleClick(references["Shared Preferences"])}
             >
               Shared Preferences
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={firebaseRef}
               onClick={() => handleClick(references.Firebase)}
             >
@@ -451,31 +446,31 @@ const FlutterRoadmap = () => {
             Advanced Dart
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={listsRef}
               onClick={() => handleClick(references.Lists)}
             >
               Lists
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={collectionsRef}
               onClick={() => handleClick(references.Collections)}
             >
               Collections
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={lambdasRef}
               onClick={() => handleClick(references.Lambdas)}
             >
               Lambdas
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={functionalProgrammingRef}
               onClick={() => handleClick(references["Functional Programming"])}
             >
               Functional Programming
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={coreLibrariesRef}
               onClick={() => handleClick(references["Core Libraries"])}
             >
@@ -489,19 +484,19 @@ const FlutterRoadmap = () => {
             State Management
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={changeNotifierRef}
               onClick={() => handleClick(references.ChangeNotifier)}
             >
               ChangeNotifier
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={valueNotifierRef}
               onClick={() => handleClick(references.ValueNotifier)}
             >
               ValueNotifier
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={riverpodRef}
               onClick={() => handleClick(references.Riverpod)}
             >
@@ -521,19 +516,19 @@ const FlutterRoadmap = () => {
             Animations
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={animationControllerRef}
               onClick={() => handleClick(references["Animation Controller"])}
             >
               Animation Controller
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={animationBuilderRef}
               onClick={() => handleClick(references["Animation Builder"])}
             >
               Animation Builder
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={animationWidgetRef}
               onClick={() => handleClick(references["Animation Widget"])}
             >
@@ -553,13 +548,13 @@ const FlutterRoadmap = () => {
             Dev Tools
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={flutterInspectorRef}
               onClick={() => handleClick(references["Flutter Inspector"])}
             >
               Flutter Inspector
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={flutterOutlineRef}
               onClick={() => handleClick(references["Flutter Outline"])}
             >
@@ -573,19 +568,19 @@ const FlutterRoadmap = () => {
             Flutter Internals
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={renderObjectsRef}
               onClick={() => handleClick(references["Render Objects"])}
             >
               Render Objects
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={threeTreesRef}
               onClick={() => handleClick(references["3 Trees"])}
             >
               3 Trees
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={immutabilityRef}
               onClick={() => handleClick(references.Immutability)}
             >
@@ -605,19 +600,19 @@ const FlutterRoadmap = () => {
             Deployment
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={appStoreRef}
               onClick={() => handleClick(references["App Store"])}
             >
               App Store
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={playStoreRef}
               onClick={() => handleClick(references["Play Store"])}
             >
               Play Store
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={guidelinesRef}
               onClick={() => handleClick(references["Guidelines & Protocols"])}
             >
@@ -631,25 +626,25 @@ const FlutterRoadmap = () => {
             Analytics
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={segmentRef}
               onClick={() => handleClick(references.Segment)}
             >
               Segment
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={mixPanelRef}
               onClick={() => handleClick(references["Mix Panel"])}
             >
               Mix Panel
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={firebaseAnalyticsRef}
               onClick={() => handleClick(references["Firebase Analytics"])}
             >
               Firebase Analytics
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={googleAnalyticsRef}
               onClick={() => handleClick(references["Google Analytics"])}
             >
