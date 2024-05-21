@@ -219,6 +219,12 @@ export default function Home() {
                 >
                   Cyber Security
                 </Link>
+                <Link
+                  href="/roadmaps/softwaredevelopment"
+                  className="rounded-lg bg-creme px-8 py-2 text-sm font-semibold text-lblack shadow-lg transition duration-150 ease-in-out hover:bg-gray-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 whitespace-nowrap"
+                >
+                  Software Development
+                </Link>
               </div>
             </div>
           </div>
