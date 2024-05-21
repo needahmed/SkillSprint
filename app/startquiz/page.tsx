@@ -1,8 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import Head from "next/head";
+import { useRouter } from "next/navigation";
 
 const QuizPage = () => {
+  const router = useRouter();
   interface PredictResponse {
     careerPath: string;
   }
@@ -176,6 +178,36 @@ const QuizPage = () => {
     }
   };
 
+  const handleExportButton = () => {
+    if (careerPath == "Web Development") {
+      router.push("/roadmaps/webdevelopment");
+    }
+    if (careerPath == "DevOps") {
+      router.push("/roadmaps/devops");
+    }
+    if (careerPath == "Blockchain") {
+      router.push("/roadmaps/blockchain");
+    }
+    if (careerPath == "Artificial Intelligence") {
+      router.push("/roadmaps/ai");
+    }
+    if (careerPath == "Cybersecurity") {
+      router.push("/roadmaps/cybersecurity");
+    }
+    if (careerPath == "Mobile App Development") {
+      router.push("/roadmaps/mobiledevelopment");
+    }
+    if (careerPath == "Cloud Computing") {
+      router.push("/roadmaps/cloudcomputing");
+    }
+    if (careerPath == "Data Science") {
+      router.push("/roadmaps/datascience");
+    }
+    if (careerPath == "Network and Systems Administration") {
+      router.push("/roadmaps/networkandadmin");
+    }
+  };
+
   return (
     <div className="flex flex-col h-screen from-creme to-lblack">
       <Head>
@@ -250,7 +282,10 @@ const QuizPage = () => {
                 resources to get started!
               </p>
               <div className="mt-5 text-center">
-                <button className="bg-creme hover:bg-lblack text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300 ease-in-out">
+                <button
+                  onClick={handleExportButton}
+                  className="bg-creme hover:bg-lblack text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300 ease-in-out"
+                >
                   Explore Roadmap
                 </button>
               </div>
