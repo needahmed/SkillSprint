@@ -234,7 +234,7 @@ const QuizPage = () => {
             </div>
           </>
         ) : (
-          <div className="flex justify-center items-center min-h-screen bg-gradient-radial from-creme to-lblack">
+          <div className="flex justify-center items-center  bg-lblack">
             <div className="p-10 bg-white rounded-lg shadow-xl hover:shadow-2xl transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110">
               <h1 className="text-3xl font-semibold text-center text-lblack mb-3">
                 Your Suggested Career Path:

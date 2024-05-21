@@ -93,15 +93,7 @@ const Navbar = () => {
                 >
                   Take Quiz
                 </Link>
-                <SignOutButton redirectUrl="/">
-                  <button
-                    className={buttonVariants({
-                      size: "sm",
-                    })}
-                  >
-                    Sign out
-                  </button>
-                </SignOutButton>
+                
               </>
             )}
             <UserButton afterSignOutUrl="/" />

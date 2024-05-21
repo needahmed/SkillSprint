@@ -34,7 +34,7 @@ const QuizIntroPage = () => {
           Goodall
         </div>
         <Link
-          className="inline-flex items-center bg-creme hover:bg-brown-200 text-white font-bold py-2 px-6 rounded-lg mt-5"
+          className="inline-flex items-center bg-creme text-lblack hover:text-white hover:bg-gray-600 font-bold py-2 px-6 rounded-lg mt-5"
           href="/startquiz"
         >
           Start the Quiz <ArrowRight className="h-5 w-5" />

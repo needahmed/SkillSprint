@@ -24,7 +24,7 @@ const pricingItems = [
         text: "Mobile-friendly interface",
       },
       {
-        text: "AI recommended roadmap",
+        text: "AI recommended career paths",
         footnote: "Better algorithmic responses for enhanced career choice",
         negative: true,
       },
@@ -184,7 +184,7 @@ const Page = () => {
                   <div className="border-t border-gray-200" />
                   <div className="p-5">
                     <Link
-                      href={plan === "Free" ? "/signup" : "/pro-signup"}
+                      href={plan === "Free" ? "/signup" : "/ethpayment"}
                       className={buttonVariants({
                         className: "w-full",
                         variant: "secondary",

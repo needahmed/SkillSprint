@@ -5,7 +5,7 @@ import { AnimatedBeam } from "@/components/magicui/animated-beam";
 import React, { forwardRef, useRef } from "react";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 
-// Define the Circle component with click effects
+
 const Circle = forwardRef<
   HTMLDivElement,
   { className?: string; children?: React.ReactNode; onClick?: () => void }
@@ -56,31 +56,31 @@ const CyberSecurityRoadmap = () => {
 
   const references = {
     "Introduction to Cybersecurity":
-      "https://www.coursera.org/learn/intro-cyber-security",
-    "Networking Fundamentals": "https://www.udemy.com/course/networkplus/",
+      "https://www.netacad.com/courses/cybersecurity/introduction-cybersecurity",
+    "Networking Fundamentals": "https://www.w3schools.com/cybersecurity/cybersecurity_networking.php",
     "Operating System Basics":
-      "https://www.udemy.com/course/linux-for-beginners/",
-    "Programming and Scripting": "https://learnpythonthehardway.org/",
+      "https://study.com/academy/lesson/the-role-of-operating-systems-in-security.html#:~:text=Do%20operating%20systems%20provide%20security,%2C%20user%2C%20and%20network%20levels.",
+    "Programming and Scripting": "https://cybersecurityguide.org/resources/coding-for-cybersecurity/#:~:text=While%20many%20languages%20can%20be,JavaScript%20can%20also%20be%20advantageous.",
     "Security Fundamentals":
-      "https://www.udemy.com/course/total-comptia-security-sy0-501/",
+      "https://online.adelaide.edu.au/blog/cyber-security-fundamentals",
     "Network Security":
-      "https://www.coursera.org/learn/computer-network-security",
-    Cryptography: "https://crypto101.io/",
-    "Web Security": "https://www.coursera.org/specializations/website-security",
-    "Ethical Hacking": "https://www.udemy.com/course/certified-ethical-hacker/",
+      "https://www.checkpoint.com/cyber-hub/network-security/what-is-network-security/#:~:text=Network%20Security%20protects%20your%20network,accessibility%2C%20and%20overall%20threat%20protection.",
+    Cryptography: "https://www.fortinet.com/resources/cyberglossary/what-is-cryptography#:~:text=Cryptography%20is%20the%20process%20of,%2C%20computer%20passwords%2C%20and%20ecommerce.",
+    "Web Security": "https://www.fortinet.com/resources/cyberglossary/what-is-web-security",
+    "Ethical Hacking": "https://www.synopsys.com/glossary/what-is-ethical-hacking.html#:~:text=Definition,and%20actions%20of%20malicious%20attackers.",
     "Incident Response":
-      "https://www.sans.org/cyber-security-courses/advanced-incident-response-digital-forensics/",
+      "https://www.ibm.com/topics/incident-response#:~:text=IBM-,What%20is%20incident%20response%3F,to%20limit%20or%20prevent%20damage.",
     "Security Operations":
-      "https://www.splunk.com/en_us/training/courses/splunk-for-security.html",
+      "https://www.cyberark.com/what-is/security-operations/#:~:text=Security%20operations%2C%20also%20known%20as,security%20posture%20of%20an%20organization.",
     "Cloud Security":
-      "https://www.udemy.com/course/aws-certified-security-specialty/",
+      "https://cloud.google.com/learn/what-is-cloud-security#:~:text=Cloud%20security%20refers%20to%20the,and%20infrastructure%20in%20cloud%20environments.",
     "Advanced Topics":
-      "https://www.udemy.com/course/advanced-penetration-testing/",
+      "https://online.stanford.edu/programs/advanced-cybersecurity-program",
     "Malware Analysis":
-      "https://www.sans.org/cyber-security-courses/malware-analysis-tools-techniques/",
-    "Threat Hunting": "https://www.crowdstrike.com/services/threat-hunting/",
+      "https://www.fortinet.com/resources/cyberglossary/malware-analysis",
+    "Threat Hunting": "https://www.crowdstrike.com/cybersecurity-101/threat-hunting/",
     "Red Team Operations":
-      "https://www.offensive-security.com/red-team-operations/",
+      "https://www.checkpoint.com/cyber-hub/cyber-security/what-is-a-red-team/#:~:text=Often%20in%20cybersecurity%20testing%2C%20the,potential%20attacker%20within%20the%20engagement.",
     Python: "https://learnpython.org/",
     Go: "https://golang.org/doc/",
     JavaScript: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
@@ -94,8 +94,8 @@ const CyberSecurityRoadmap = () => {
   };
 
   return (
-    <MaxWidthWrapper className="text-creme mb-12 mt-12 sm:mt-20 flex flex-col items-center justify-center text-center">
-      <h1 className="max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl mb-10">
+    <MaxWidthWrapper className="text-lblack mb-12 mt-12 sm:mt-20 flex flex-col items-center justify-center text-center">
+      <h1 className="text-creme max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl mb-10">
         Cybersecurity Roadmap
       </h1>
       <div className="relative isolate">
@@ -126,19 +126,19 @@ const CyberSecurityRoadmap = () => {
             Introduction to Cybersecurity
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={networkingRef}
               onClick={() => handleClick(references["Networking Fundamentals"])}
             >
               Networking Fundamentals
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={osRef}
               onClick={() => handleClick(references["Operating System Basics"])}
             >
               Operating System Basics
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={programmingRef}
               onClick={() =>
                 handleClick(references["Programming and Scripting"])
@@ -154,39 +154,39 @@ const CyberSecurityRoadmap = () => {
             Security Fundamentals
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={networkSecurityRef}
               onClick={() => handleClick(references["Network Security"])}
             >
               Network Security
-            </Circle>
-            <Circle
+            </Circle> 
+            <Circle className="circle-c"
               ref={cryptographyRef}
               onClick={() => handleClick(references.Cryptography)}
             >
               Cryptography
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={webSecurityRef}
               onClick={() => handleClick(references["Web Security"])}
             >
               Web Security
             </Circle>
           </div>
-          <Circle
+          <Circle className="circle-d"
             ref={ethicalHackingRef}
             onClick={() => handleClick(references["Ethical Hacking"])}
           >
             Ethical Hacking
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-d"
               ref={incidentResponseRef}
               onClick={() => handleClick(references["Incident Response"])}
             >
               Incident Response
             </Circle>
-            <Circle
+            <Circle className="circle-d"
               ref={securityOpsRef}
               onClick={() => handleClick(references["Security Operations"])}
             >
@@ -206,19 +206,19 @@ const CyberSecurityRoadmap = () => {
             Advanced Topics
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={malwareAnalysisRef}
               onClick={() => handleClick(references["Malware Analysis"])}
             >
               Malware Analysis
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={threatHuntingRef}
               onClick={() => handleClick(references["Threat Hunting"])}
             >
               Threat Hunting
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={redTeamOpsRef}
               onClick={() => handleClick(references["Red Team Operations"])}
             >
@@ -238,22 +238,22 @@ const CyberSecurityRoadmap = () => {
             Programming Skills and Knowledge (Optional but Recommended)
           </Circle>
           <div className="flex flex-col md:flex-row gap-10 md:pl-20">
-            <Circle
+            <Circle className="circle-c"
               ref={pythonRef}
               onClick={() => handleClick(references.Python)}
             >
               Python
             </Circle>
-            <Circle ref={goRef} onClick={() => handleClick(references.Go)}>
+            <Circle className="circle-c" ref={goRef} onClick={() => handleClick(references.Go)}>
               Go
             </Circle>
-            <Circle
+            <Circle className="circle-c"
               ref={javascriptRef}
               onClick={() => handleClick(references.JavaScript)}
             >
               JavaScript
             </Circle>
-            <Circle ref={cppRef} onClick={() => handleClick(references["C++"])}>
+            <Circle className="circle-c" ref={cppRef} onClick={() => handleClick(references["C++"])}>
               C++
             </Circle>
           </div>
