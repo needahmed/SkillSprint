@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import { useRouter } from "next/navigation";
+import { ClipLoader } from "react-spinners";
 
 const QuizPage = () => {
   const router = useRouter();
@@ -13,6 +14,7 @@ const QuizPage = () => {
   const [answers, setAnswers] = useState<number[]>(Array(10).fill(0)); // For storing answer scores
   const [showScore, setShowScore] = useState(false);
   const [careerPath, setCareerPath] = useState("");
+  const [isLoading, setIsLoading] = useState(false); // New state for loading
 
   // List of questions and options
   const questions = [
@@ -156,6 +158,7 @@ const QuizPage = () => {
   };
 
   const handleSubmit = async () => {
+    setIsLoading(true); // Start loading
     try {
       const response = await fetch(`${process.env.API_BASE_URL}/predict`, {
         method: "POST",
@@ -175,6 +178,8 @@ const QuizPage = () => {
     } catch (error) {
       console.error("Failed to submit quiz", error);
       alert("Failed to get a career suggestion. Please try again.");
+    } finally {
+      setIsLoading(false); // Stop loading
     }
   };
 
@@ -238,7 +243,7 @@ const QuizPage = () => {
           showScore ? "items-center" : ""
         } flex flex-col justify-center bg-[#262525] px-5`}
       >
-        {!showScore ? (
+        {!showScore && !isLoading ? (
           <>
             <div className="flex flex-col items-start w-full">
               <h4 className="text-xl text-white/60">
@@ -268,6 +273,13 @@ const QuizPage = () => {
               ))}
             </div>
           </>
+        ) : isLoading ? (
+          <div className="flex flex-col items-center">
+            <ClipLoader color="#E4C7B7" size={50} />
+            <p className="mt-4 text-2xl text-white animate-bounce">
+              Finding the right career for you...
+            </p>
+          </div>
         ) : (
           <div className="flex justify-center items-center  bg-lblack">
             <div className="p-10 bg-white rounded-lg shadow-xl hover:shadow-2xl transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110">
@@ -296,7 +308,7 @@ const QuizPage = () => {
           </div>
         )}
       </div>
-      {!showScore && (
+      {!showScore && !isLoading && (
         <div className="w-full p-4 bg-[#262525]">
           <div className="flex justify-between">
             <button
