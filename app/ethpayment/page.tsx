@@ -74,16 +74,16 @@ const PaymentPage = () => {
     <div className="flex flex-col items-center justify-center min-h-screen bg-black text-creme relative isolate">
       <Toaster richColors />
       <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 items-center justify-center text-center">
-        Crypto Payment (Sepolia Testnet)
+        Crypto Payment (Sepolia ETH)
       </h1>
-      
+
       <button
         onClick={connectWallet}
         className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4"
       >
         Connect Wallet
       </button>
-      
+
       {account && (
         <>
           <p className="mb-4">Connected account: {account}</p>
