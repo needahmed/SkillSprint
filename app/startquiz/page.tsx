@@ -203,6 +203,9 @@ const QuizPage = () => {
     if (careerPath == "Data Science") {
       router.push("/roadmaps/datascience");
     }
+    if (careerPath == "Software Development") {
+      router.push("/roadmaps/softwaredevelopment");
+    }
     if (careerPath == "Network and Systems Administration") {
       router.push("/roadmaps/networkandadmin");
     }
