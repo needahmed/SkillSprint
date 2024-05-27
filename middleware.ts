@@ -2,7 +2,11 @@ import { NextResponse } from "next/server";
 import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 
 // Define routes that require authentication
-const protectedRoutes = createRouteMatcher(["/quiz", "/counselling"]);
+const protectedRoutes = createRouteMatcher([
+  "/quiz",
+  "/counselling",
+  "/ethpayment",
+]);
 
 export default clerkMiddleware((auth, req) => {
   // Check if the requested URL is a protected route and the user is not signed in
